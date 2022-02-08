@@ -1,0 +1,34 @@
+---
+label: Theme
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: sub_title
+  label: sub_title
+- type: file
+  name: image
+  label: image
+- type: boolean
+  name: primary_author
+  label: primary_author
+- type: textarea
+  name: bio
+  label: bio
+- type: field_group_list
+  name: social_accounts
+  label: social_accounts
+  fields:
+  - type: text
+    name: icon
+    label: icon
+  - type: text
+    name: url
+    label: url
+pages:
+- test.md
