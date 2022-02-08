@@ -1,0 +1,36 @@
+{% if page.header_style == 'two' and page.header_image %}
+<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{{page.header_image}}">
+  <div class="container inner pt-200 pb-200 text-center">
+    <div class="space90"></div>
+    {% if page.title %}
+     <h1 class="section-title text-uppercase">{{page.title}}</h1>
+    {% endif %}
+    {% if page.sub_title %}
+     <h2 class="display-1 m-0">{{page.sub_title}}</h2>
+    {% endif %}
+  </div>
+</div>
+{% elsif page.header_style == 'one' and page.header_image %}
+<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{{page.header_image}}">
+  <div class="container inner text-center">
+    <div class="space90"></div>
+    {% if page.title %}
+     <h1 class="page-title">{{page.title}}</h1>
+    {% endif %}
+    {% if page.sub_title %}
+     <p class="lead">{{page.sub_title}}</p>
+    {% endif %}
+  </div>
+</div>
+{% elsif page.header_style: 'one' or header_style: 'two' and page.header_image == empty %}
+<div class="wrapper light-wrapper page-title-wrapper">
+  <div class="container inner text-center">
+    {% if page.title %}
+     <h1 class="page-title">{{page.title}}</h1>
+    {% endif %}
+    {% if page.sub_title %}
+     <p class="lead">{{page.sub_title}}</p>
+    {% endif %}
+  </div>
+</div>
+{% endif %}

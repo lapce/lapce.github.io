@@ -1,0 +1,54 @@
+---
+layout: page_2
+page_header:
+  enable: true
+  title: "Media Player"
+  sub_title: "Aenean lacinia bibendum nulla sed consectetur"
+  background_image: "/assets/images/art/bg1.jpg"
+---
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <h2 class="section-title mb-40 text-center">HTML5 Video</h2>
+        <video poster="{{relative_url}}/assets/media/movie.jpg" class="player" playsinline controls preload="none">
+          <source src="{{relative_url}}/assets/media/movie.mp4" type="video/mp4">
+          <source src="{{relative_url}}/assets/media/movie.webm" type="video/webm">
+        </video>
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <h2 class="section-title mb-40 text-center">Vimeo Video</h2>
+        <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="90355541"></div>
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <h2 class="section-title mb-40 text-center">YouTube Video</h2>
+        <div class="player" data-plyr-provider="youtube" data-plyr-embed-id="26TbMXXOe0I"></div>
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->

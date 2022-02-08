@@ -1,0 +1,76 @@
+---
+layout: default
+
+---
+
+{% if page.white_menu %}
+ {% if page.header_style == 'two' %}
+   {% include header.html extra_class="transparent  nav-uppercase" logo_class="logo" container_class="container"%}
+  {% else %}
+  {% include header.html extra_class="absolute transparent inverse-text nav-uppercase" light_logo="true"  container_class="container"%}
+ {% endif %}
+ {% if page.header_style == 'one' %}
+ {% include header.html extra_class="absolute transparent inverse-text nav-uppercase" light_logo="true"  container_class="container"%}
+ {% endif %}
+{% elsif page.black_menu %}
+  {% if page.header_style == 'one' %}
+    {% include header.html extra_class="transparent navbar-hover-opacity nav-uppercase" logo_class="logo" container_class="container" %}
+  {% elsif page.header_style == 'two' %}
+    {% include header.html extra_class="absolute transparent" logo_class="logo" container_class="container" %}
+  {% elsif page.header_style == 'three' %}
+    {% include header.html extra_class="transparent" logo_class="logo" container_class="container" alignment_class="ml-auto" %}
+  {% else %}
+    {% include header.html extra_class="transparent" logo_class="logo" container_class="container" %}
+{% endif %}
+{% endif %}
+
+{% if page.products_slider.enable %}
+  {% include products_slider.html %}
+{% endif %}
+
+{% if page.product_heading.enable %}
+{% include pages/page_header.html %}
+{% endif %}
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="grid grid-view boxed">
+      <div class="tiles">
+        <div class="row isotope">
+          {% include shop_items_list.html %}
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.tiles -->
+    </div>
+    <!-- /.grid -->
+    <div class="space30"></div>
+    
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination text-center">
+      <ul>
+        {% if paginator.previous_page %}
+        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pl-0"><i class="jam jam-arrow-left"></i></a></li>
+        {% endif %}
+        
+        {% if paginator.page_trail %}
+        {% for trail in paginator.page_trail %}
+          <li {% if page.url == trail.path %}class="active"{% endif %}>
+              <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" title="{{trail.title}}"><span>{{ trail.num }}</span></a>
+          </li>
+        {% endfor %}
+      {% endif %}
+
+        {% if paginator.next_page %}
+        <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pr-0"><i class="jam jam-arrow-right"></i></a></li>
+        {% endif %}
+      </ul>
+    </div>
+    {% endif %}  
+    
+    <!-- /.pagination -->
+  </div>
+  <!-- /.container -->
+</div>
+
+{% include footer_2.html light_logo="true" %}

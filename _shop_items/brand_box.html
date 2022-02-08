@@ -1,0 +1,147 @@
+---
+layout: page
+title: "Product Page"
+sub_title: "Aenean lacinia bibendum nulla sed consectetur"
+black_menu: true
+header_style: 'three'
+position: 8
+
+shop_page_cover: "/assets/images/art/s8.jpg"
+shop_page_cover_hover: "/assets/images/art/s8-2.jpg"
+
+carousel_images:
+- "/assets/images/art/ss1.jpg"
+- "/assets/images/art/ss2.jpg"
+- "/assets/images/art/ss3.jpg"
+
+product_info:
+  title: Brand Box
+  price: $22.00
+  text: Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam
+  rating: three
+
+product_details_tab: 
+  title: Product Detail
+  text: |
+    Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     
+    Donec sed odio dui. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. 
+  list:
+  - Mauris lacinia dui non metus dignissim venenatis.
+  - Etiam elit tellus, condimentum tempor lobortis non.
+  - Aliquam pharetra vestibulum arcu, eget iaculis. 
+
+shipping_tab:
+  title: Shipping and Returns
+  text: |
+    Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod.
+
+    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor vel scelerisque nisl consectetur et.
+    
+    Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.
+
+review_tab:
+  title: Reviews (3)
+---
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-6 mb-0">
+        <div class="owl-slider-wrapper">
+          <div class="owl-carousel owl-slider-main mb-10">
+          {% for carousel_image in page.carousel_images %}
+            <div class="item"><img src={{carousel_image}} alt="" /></div>
+          {% endfor %}
+          </div>
+          <!-- /.owl-slider-main -->
+          <div class="owl-carousel owl-slider-nav mb-0">
+            {% for carousel_image in page.carousel_images %}
+              <div class="item"><img src={{carousel_image}} alt="" /></div>
+            {% endfor %}
+          </div>
+          <!-- /.owl-slider-nav -->
+        </div>
+        <!-- /.owl-slider-wrapper -->
+      </div>
+      <!-- /column -->
+      <aside class="col-lg-6 sidebar product">
+        <h1 class="post-title">{{page.product_info.title}}</h1>
+        <div class="price large"><span class="amount">{{page.product_info.price}}</span></div>
+        <div class="space30"></div>
+        <p>{{page.product_info.text}}.</p>
+        <span class="ratings {{page.product_info.rating}}"></span> <a href="#" class="hover">(3 Customer Reviews)</a>
+        <div class="space20"></div>
+        <ul class="list-unstyled item-details product">
+          <li class="d-flex align-items-center pb-20"><strong class="color-dark pr-10">Size:</strong>
+            <div class="form-group custom-select-wrapper mb-0">
+              <select class="custom-select">
+                <option value="xs" selected="selected">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+              </select>
+            </div>
+          </li>
+          <li class="d-flex align-items-center"><strong class="color-dark pr-10">Quantity:</strong>
+            <div class="form-group item-quantity">
+              <input type="button" value="-" class="qtyminus" />
+              <input type="text" name='quantity' value='0' class="qty" />
+              <input type="button" value="+" class="qtyplus" />
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="btn">Add to Cart</a>
+      </aside>
+      <!-- /.sidebar -->
+    </div>
+    <!-- /.row -->
+    <div class="space50"></div>
+    <ul class="nav nav-tabs">
+      <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#tab1-1">{{page.product_details_tab.title}}</a> </li>
+      <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab1-2">{{page.shipping_tab.title}}</a> </li>
+      <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tab1-3">{{page.review_tab.title}}</a> </li>
+    </ul>
+    <!-- /.nav-tabs -->
+    <div class="tab-content">
+      <div class="tab-pane show active" id="tab1-1">
+        {{page.product_details_tab.text | markdownify }}
+        {% if page.product_details_tab.list %}
+        <ul class="unordered-list list-default">
+          {% for item in page.product_details_tab.list %}
+            <li>{{item}}.</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      <div class="tab-pane" id="tab1-2">
+        {{page.shipping_tab.text | markdownify }}
+      </div>
+      <div class="tab-pane" id="tab1-3">
+        <div id="comments">
+          <ol id="singlecomments" class="commentlist">
+            {% for review in site.data.reviews %}
+              <li>
+                <div class="message">
+                  <!-- Using data from _data/reviews.json -->
+                  <figure class="user rounded"><img alt="" src="{{relative_url}}{{ review.avatar }}" /></figure>
+                  <div class="message-inner">
+                    <h6 class="comment-author"><a href="#">{{ review.name }}</a></h6>
+                    <p>{{ review.text }}.</p>
+                    <div class="meta"> <span class="date">{{ review.date }}</span><span><em class="ratings {{ review.ratings }}"></em></span> </div>
+                  </div>
+                </div>
+              </li>
+            {% endfor %}
+          </ol>
+        </div>
+        <!-- /#comments -->
+      </div>
+    </div>
+    <!-- /.tab-content -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+
+{% include products_carousel.html %}

@@ -1,0 +1,63 @@
+---
+layout: page
+title: "Contact Us"
+sub_title: |
+  Aenean lacinia bibendum nulla sed consectetur
+header_image: "/assets/images/art/bg3.jpg"
+white_menu: true
+
+contact_info:
+  enable: true
+  contact_data:
+    - icon: "/assets/images/icons/ui-gps.png"
+      info: "Moon Street Light Avenue<br> 14/05 Jupiter, JP 80630"
+
+    - icon: "/assets/images/icons/co-telephone.png"
+      info: "00 (123) 456 78 90<br/> 00 (987) 654 32 10"
+
+    - icon: "/assets/images/icons/co-email-5.png"
+      info:
+      - "manager@email.com <br/>"
+      - "asistant@email.com"
+
+contact_form:
+  enable: true
+  title: "Request Photography Pricing"
+  sub_title: "For more information please get in touch using the form below:"
+  action_email: "tortoizthemes@gmail.com"
+  bg_image: "/assets/images/art/bg20.jpg"
+  forms_data: 
+
+    - field_type: "input"
+      field_name: "user_first_name"
+      placeholder: "First Name" 
+      error_message: "First Name Is required"
+
+    - field_type: "input"
+      field_name: "user_last_name"
+      placeholder: "Last Name" 
+      error_message: "Last Name Is required"
+
+    - field_type: "input"
+      field_name: "user_phone"
+      placeholder: "Phone Number" 
+      error_message: "Phone Number Is required"
+
+    - field_type: "input"
+      field_name: "user_email"
+      placeholder: "Email"
+      error_message: "Email Is required"
+
+    - field_type: "textarea"
+      field_name: "user_message"
+      placeholder: "Message"
+      error_message: "Message Is required"
+
+google_maps:
+  enable: true
+  
+---
+
+{% include contact_info.html %}
+{% include contact_2.html %}
+{% include gmap.html %}

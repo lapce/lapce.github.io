@@ -1,0 +1,14 @@
+
+
+{% if page.google_maps.enable %}
+<div class="google-map {% if include.extra_class %} {{include.extra_class}} {% endif %}">
+    {% if page.google_maps.google_map != null %}
+        {{page.google_maps.google_map}}
+        {% else %}
+        {{site.data.general_settings.google_map}}
+    {% endif %}
+    
+  </div>
+<!--/.google-map -->
+{% endif %}
+

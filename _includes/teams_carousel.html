@@ -1,0 +1,51 @@
+
+{% if page.teams_carousel.type == 'blob' %}
+      <div class="carousel owl-carousel text-center owl-loaded owl-drag" data-margin="60" data-dots="true"
+        data-autoplay="false" data-autoplay-timeout="5000"
+        data-responsive="{&quot;0&quot;:{&quot;items&quot;: &quot;1&quot;}, &quot;768&quot;:{&quot;items&quot;: &quot;2&quot;}, &quot;992&quot;:{&quot;items&quot;: &quot;3&quot;}}">
+        {% for member in site.data.team_carousel.members %}
+        <div class="item">
+          <figure class="img-blob blob1 mb-25"><img src="{{member.image}}" style="width: 15rem" alt="" /></figure>
+          <h4 class="mb-15">{{member.name}}</h4>
+          <div class="meta">{{member.designation}}</div>
+          <p>{{member.description}}</p>
+
+          <ul class="social social-s ml-auto">
+            {% for social_icons in member.social_icons %}
+            <li><a href="{{social_icons.url}}"><i class="{{social_icons.icon}}"></i></a></li>
+            {% endfor %}
+          </ul>
+
+        </div>
+        <!--/column -->
+        {% endfor %}
+
+      </div>
+      
+  {% elsif page.teams_carousel.type == 'box'  %}
+
+  <div class="carousel owl-carousel gap-small text-center owl-loaded owl-drag" data-margin="0" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive="{&quot;0&quot;:{&quot;items&quot;: &quot;1&quot;}, &quot;768&quot;:{&quot;items&quot;: &quot;2&quot;}, &quot;1024&quot;:{&quot;items&quot;: &quot;3&quot;}, &quot;1440&quot;:{&quot;items&quot;: &quot;4&quot;}}">
+        {% for member in site.data.team_carousel.members %}
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow">
+              <figure class="img-blob blob1 mb-25"><img src="{{member.image}}" style="width: 7rem" alt="" /></figure>
+            <h4 class="mb-15">{{member.name}}</h4>
+            <div class="meta">{{member.designation}}</div>
+            <p>{{member.description}}</p>
+  
+            <ul class="social social-s ml-auto">
+              {% for social_icons in member.social_icons %}
+              <li><a href="{{social_icons.url}}"><i class="{{social_icons.icon}}"></i></a></li>
+              {% endfor %}
+            </ul>
+  
+            </div>
+          </div>
+        </div>
+        <!--/column -->
+        {% endfor %}
+
+      </div>
+{% endif %}
+

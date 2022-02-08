@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% if page.white_menu %}
+ {% if page.header_style == 'two' %}
+   {% include header.html extra_class="transparent  nav-uppercase" logo_class="logo" container_class="container"%}
+  {% else %}
+  {% include header.html extra_class="absolute transparent inverse-text nav-uppercase" light_logo="true"  container_class="container"%}
+ {% endif %}
+ {% if page.header_style == 'one' %}
+ {% include header.html extra_class="absolute transparent inverse-text nav-uppercase" light_logo="true"  container_class="container"%}
+ {% endif %}
+{% elsif page.black_menu %}
+  {% if page.header_style == 'one' %}
+    {% include header.html extra_class="transparent navbar-hover-opacity nav-uppercase" logo_class="logo" container_class="container" %}
+  {% elsif page.header_style == 'two' %}
+    {% include header.html extra_class="absolute transparent" logo_class="logo" container_class="container" %}
+  {% elsif page.header_style == 'three' %}
+    {% include header.html extra_class="transparent" logo_class="logo" container_class="container" alignment_class="ml-auto" %}
+  {% else %}
+    {% include header.html extra_class="transparent" logo_class="logo" container_class="container" %}
+{% endif %}
+{% endif %}
+
+{% include pages/page_header.html %}
+
+{{content}}
+
+{% include footer_2.html light_logo="true" %}

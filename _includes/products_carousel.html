@@ -1,0 +1,57 @@
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="section-title text-center">Products You Might Like</h2>
+    <div class="grid grid-view boxed">
+      <div class="carousel owl-carousel gap-small" data-margin="0" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "3"}}'>
+
+        {% for product in site.shop_items limit: 6 %}
+
+          <div class="item item-detailed">
+            <div class="item-inner">
+              <div class="box bg-white shadow p-30">
+                <figure class="main rounded mb-30">
+                  <div class="item-detailed-image"><img src="{{ product.shop_page_cover }}" alt=""/><img src="{{ product.shop_page_cover_hover }}" alt=""/></div>
+                  <a href="#" class="hover-icon-first" data-tip="Add to Wishlist">
+                    <i class="jam jam-heart"></i>
+                  </a>
+                  <a href="#" class="hover-icon-second" data-tip="Add to cart">
+                    <i class="jam jam-shopping-cart"></i>
+                  </a>
+                  {% if product.label == 'sale' %} <span class="item-label bg-rose">Sale!</span>
+                  {% elsif product.label == 'new'%} <span class="item-label bg-meander">New!</span>
+                  {% endif %}
+                </figure>
+                <div class="item-content">
+                  <h2 class="post-title mb-10">
+                    <a href="{{ product.url }}">{{ product.product_info.title }}</a>
+                  </h2>
+                  <div class="price mb-0">
+                    {% if product.product_info.old_price %}
+                    <del>
+                      <span class="amount">{{ product.product_info.old_price }}</span>
+                    </del>
+                    <ins>
+                    {% endif %}
+                      <span class="amount">{{ product.product_info.price }}</span>
+                    {% if product.product_info.old_price %} </ins> {% endif %}
+                  </div>
+                  <span class="ratings {{ product.product_info.rating }}"></span>
+                </div>
+                <!-- /.item-content -->
+              </div>
+              <!--/.item-inner -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!--/.item -->
+
+        {% endfor %}
+
+
+      </div>
+      <!-- /.owl-carousel -->
+    </div>
+    <!-- /.grid-view -->
+  </div>
+  <!-- /.container -->
+</div>

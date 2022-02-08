@@ -1,0 +1,91 @@
+---
+layout: default
+page_header:
+  enable: true
+  title: "Contact 4"
+  sub_title: "How can we help?"
+  button_text: 
+  button_url: "#"
+  background_image: "/assets/images/art/bg3.jpg"
+
+contact_area:
+  enable: true
+  title: "Get in Touch"
+  sub_title: "Have any questions? Reach out to us from our contact form and we will get back to you shortly."
+  action_email: "tortoizthemes@gmail.com"
+  
+  lists:
+    - title: Address
+      info_01: "Moonshine St. 14/05 Light City,"
+      info_02: "London, United Kingdom"
+      icon: "icofont-location-pin"
+
+    - title: E-mail
+      info_01: "tortoizthemes@gmail.com"
+      info_02: "support@tortoizthemes.com"
+      icon: "icofont-mail-box"
+
+    - title: Phone
+      info_01: "+00 (123) 456 78 90"
+      info_02: "+00 (123) 456 78 90"
+      icon: "icofont-telephone"
+
+  forms_data: 
+
+    - field_type: "input"
+      field_name: "first_name"
+      placeholder: "First Name" 
+      error_message: "First Name Is required" 
+
+    - field_type: "input"
+      field_name: "last_name"
+      placeholder: "Laast Name" 
+      error_message: "Last Name Is required"
+
+    - field_type: "input"
+      field_name: "user_email"
+      placeholder: "Email"
+      error_message: "Email Is required"
+
+    - field_type: "input"
+      field_name: "user_phone"
+      placeholder: "Phone Number"
+      error_message: "Phone Number Is required"
+
+    - field_type: "textarea"
+      field_name: "user_message"
+      placeholder: "Message"
+      error_message: "Message Is required"
+
+---
+
+{% include header.html container_class="container" extra_class="absolute transparent inverse-text nav-uppercase"
+light_logo="true" %}
+{% if page.page_header.enable %}
+{% assign page_d = page.page_header %}
+<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text"
+    data-image-src="{{page_d.background_image}}">
+    <div class="container inner text-center">
+        
+        <div class="space90"></div>
+        {% if page_d.title %}
+        <h1 class="page-title">{{page_d.title}}</h1>
+        {% endif %}
+        {% if page_d.sub_title %}
+        <p class="lead mb-30">{{page_d.sub_title}}</p>
+        {% endif %}
+        {% if page_d.button_text != null %}
+        <a href="{{page_d.button_url}}" class="btn btn-white btn-strong-hover">{{page_d.button_text}}</a>
+        {% endif %}
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+{% endif %}
+
+
+        <!--contact form-->
+        {% include contact_1.html %}
+        <!--/.contact form-->
+ 
+{% include footer_3.html light_logo="true" %}

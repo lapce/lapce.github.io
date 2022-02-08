@@ -1,0 +1,237 @@
+---
+layout: page
+title: "We Are Snowlake"
+sub_title: |
+  A company turning ideas into beautiful things.
+header_image: "/assets/images/art/bg9.jpg"
+header_style: 'one'
+
+
+about_us_area:
+  enable: true
+  title: "About Us"
+  sub_title: "We are a digital & branding company that believes in the power of creative ideas."
+  image: "/assets/images/art/about2.jpg" 
+  description: |
+    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia.
+  projects:
+    - projects_number: 7518
+      title: "Completed Projects"
+    - projects_number: "3472"
+      title: "Satisfied Customers"
+    - projects_number: "523"
+      title: "Awards Won"
+teams_carousel:
+  enable: true
+  title: |
+    Save your time and money <br class="d-none d-lg-block"> by choosing our professional team.
+
+page_header:
+  enable: true
+  background_image:  "/assets/images/art/bg9.jpg"
+  title: "Our Process"
+  sub_title: |
+    Find out everything you need to know <br class="d-none d-lg-block">about creating a business process model.
+
+features_area:
+  enable: true
+  title: "App Features"
+  sub_title: "Snowlake makes your spending stress-free for you to have the perfect control"
+  features:
+    - title: "Secure Payments"
+      icon: "icofont-safety"
+      icon_color: "blue"
+      description: "Nulla vitae elit libero elit non porta gravida eget metus cras. Aenean eu leo quam vestibulum."
+
+    - title: "Fast Transactions"
+      icon: "icofont-rocket-alt-2"
+      icon_color: "green"
+      description: "Nulla vitae elit libero elit non porta gravida eget metus cras. Aenean eu leo quam vestibulum."
+
+    - title: "Easy Usage"
+      icon: "icofont-touch"
+      icon_color: "pink"
+      description: "Nulla vitae elit libero elit non porta gravida eget metus cras. Aenean eu leo quam vestibulum."
+
+video_area:
+  enable: true
+  title: "How It Works"
+  sub_title: "Enjoy the effortless management of your bills with intuitive features and powerful results."
+  vimeo_video_id: "165101721"
+
+testimonials:
+  enable: true
+  image: "/assets/images/art/about9.jpg"
+  title: "Our Community"
+  sub_title: |
+    Customer satisfaction is our major goal. <br class="d-none d-lg-block">See what our customers are saying about us.
+  projects_number: 500
+  project_tag: "Happy Customers"
+  feedback:
+
+    - quote: |
+        Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat.
+      image: "/assets/images/art/t5.jpg" 
+      name: "Cornelia Gibson"
+      designation: "Financial Analyst"
+  
+    - quote: |
+        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus.
+      image: "/assets/images/art/t2.jpg" 
+      name: "Coriss Ambady"
+      designation: "Marketing Specialist"
+  
+    - quote: |
+        Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget.
+      image: "/assets/images/art/t3.jpg" 
+      name: "Barclay Widerski"
+      designation: "Sales Manager"
+
+clients_carousel:
+  enable: true
+
+
+
+---
+<div class="wrapper white-wrapper">
+  <div class="container inner">
+  {% if page.about_us_area.enable %}
+  <div class="row align-items-center">
+    {% if page.about_us_area.image %}
+    <div class="col-lg-6">
+      <div class="img-blob blob8">
+        <img src="{{page.about_us_area.image}}" style="width: 30rem" alt="{{page.about_us_area.title}}"/>
+      </div>
+    </div>
+    {% endif %}
+    <div class="space20 d-md-none"></div>
+    <div class="space50 d-none d-md-block d-lg-none"></div>
+    <div class="col-lg-6 pl-60 pl-md-15">
+      {% if page.about_us_area.title %}
+       <h2 class="title-color color-gray">{{page.about_us_area.title}}</h2>
+      {% endif %}
+      {% if page.about_us_area.sub_title %}
+       <h3 class="display-3">{{page.about_us_area.sub_title}}</h3>
+      {% endif %}
+     <div class="space20"></div>
+      {% if page.about_us_area.description %}
+       <p>{{page.about_us_area.description}}</p>
+      {% endif %}
+      <div class="space20"></div>
+      <div class="row counter">
+        {% for project in page.about_us_area.projects %}
+        <div class="col-md-4">
+          <h3 class="value">{{project.projects_number}}</h3>
+          <p>{{project.title}}</p>
+        </div>
+        <!--/column -->
+        {% endfor %}
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/column -->
+  </div>
+  <!--/.row -->
+  {% endif %} 
+  </div>
+</div>
+  <!-- /.wrapper -->
+<!-- teams section -->
+  {% include team_members.html %}
+<!--/.teams section-->
+<!-- feature Process section-->
+{% if page.page_header.enable%}
+<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{{page.page_header.background_image}}">
+  <div class="container inner text-center">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        {% if page.page_header.title %}
+        <h1 class="title-color color-white text-center">{{page.page_header.title}}</h1>
+       {% endif %}
+       {% if page.page_header.sub_title %}
+        <h3 class="display-3 mb-0">{{page.page_header.sub_title}}</h3>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+  <div class="space140"></div>
+</div>
+<!-- /.wrapper -->
+{% if page.video_area.enable %}
+<div class="wrapper overflow-top">
+  <div class="container inner pt-0">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="{{page.video_area.vimeo_video_id}}"></div>
+      </div>
+    </div>
+    <div class="space80"></div>
+    {% if page.features_area.enable %}
+    <div class="row gutter-60 text-center">
+      {% for features in page.features_area.features %}
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <span class="icon icon-blob icon-blob-{{features.icon_color}} color-{{features.icon_color}} mb-30"><i
+            class="{{features.icon}}"></i><span class="step bg-{{features.icon_color}}">{{forloop.index}}</span></span>
+        <h5>{{features.title}}</h5>
+        <p>{{features.description}}</p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+ 
+</div>
+{% endif %}
+
+<!-- /.feature Process Section-->
+ <!--testimonial wrapper-->
+ <div class="wrapper gray-wrapper">
+  <div class="container inner">
+  	{% if page.testimonials.enable %}
+    <h2 class="title-color color-gray text-center">{{page.testimonials.title}}</h2> 
+        <h3 class="display-3 text-center">{{ page.testimonials.sub_title }}</h3>
+        <div class="space20"></div>
+    <div class="grid-view">
+      <div class="carousel owl-carousel gap-small" data-margin="0" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1140":{"items": "3"}}'>
+      {% for feedback in page.testimonials.feedback %}
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow">
+                <blockquote>
+                  <p>"{{feedback.quote}}"</p>
+                  <div class="blockquote-details">
+                    {% if feedback.image %}
+                    <div class="img-blob blob1">
+                      <img src="{{feedback.image}}" alt="{{feedback.name}}"/>
+                    </div>
+                    {% endif %}
+                    <div class="info">
+                      <h6 class="mb-0">{{feedback.name}}</h6>
+                      <span class="meta mb-0">{{feedback.designation}}</span>
+                    </div>
+                  </div>
+                </blockquote>
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item-inner -->
+        </div>
+        <!-- /.item -->
+        {% endfor %}
+      </div>
+      <!-- /.owl-carousel -->
+    </div>
+    <!-- /.grid-view -->
+    {% endif %}
+    {% if page.clients_carousel.enable %}
+    <div class="space80"></div>
+      {% include clients_carousel.html %}
+    </div>
+    <!-- /.owl-carousel -->
+    {% endif %}
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+{% endif %}

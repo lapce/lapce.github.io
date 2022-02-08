@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+{% if page.white_menu %}
+ {% if page.header_style == 'two' %}
+   {% include header.html extra_class="transparent  nav-uppercase" logo_class="logo" container_class="container"%}
+  {% else %}
+  {% include header.html extra_class="absolute transparent inverse-text nav-uppercase" light_logo="true"  container_class="container"%}
+ {% endif %}
+ {% if page.header_style == 'one' %}
+ {% include header.html extra_class="absolute transparent inverse-text nav-uppercase" light_logo="true"  container_class="container"%}
+ {% endif %}
+{% elsif page.black_menu %}
+  {% if page.header_style == 'one' %}
+    {% include header.html extra_class="transparent navbar-hover-opacity nav-uppercase" logo_class="logo" container_class="container" %}
+  {% else %}
+    {% include header.html extra_class="transparent" logo_class="logo" container_class="container" %}
+{% elsif page.header_style == 'two' %}
+    {% include header.html extra_class="absolute transparent" logo_class="logo" container_class="container" %}
+{% else %}
+    {% include header.html extra_class="transparent" logo_class="logo" container_class="container" %}
+{% endif %}
+{% endif %}
+
+{% include pages/page_header.html %}
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="blog classic-view boxed">
+          {% for post in paginator.posts %}
+          {% assign post_format = post.post_format %}
+          {% case post_format %}
+          {% when "general" %}
+            {% include standard_post.html %}
+          {% when "gallery" %}
+            {% include gallery_post.html %}
+          {% when "carousel" %}
+            {% include carousel_post.html %}
+          {% when "video" %}
+            {% include video_post.html %}
+          {% else %}
+          {% include standard_post.html %}
+          {% endcase %}
+          {% endfor %}
+        </div>
+        <!-- /.blog -->
+        {% include pagination.html %}
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+</div>
+
+{% include footer_2.html light_logo="true" %}

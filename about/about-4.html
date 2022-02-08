@@ -1,0 +1,201 @@
+---
+layout: page
+title: "We Are Snowlake"
+sub_title: |
+  Branding agency that believes in the <br class="d-none d-lg-block" />power of creative ideas & great designs
+header_image: "/assets/images/art/bg31.jpg"
+header_style: "one"
+
+about_area: 
+  enable: true
+  title: "What We Do?"
+  sub_title: "We specialize in web, mobile, brand & product design. We love to turn ideas into beautiful things."
+  projects_number: 450
+  project_tag: "Completed Projects"
+  image: "/assets/images/art/about7.png"
+  skills:
+    - title: "Web Development"
+      numbers: 100
+      style: "pink"
+
+    - title: "Product Design"
+      numbers: 80
+      style: "blue"
+
+    - title: "Identity & Branding"
+      numbers: 85
+      style: "green"
+
+    - title: "Mobile Development"
+      numbers: 90
+      style: "purple"
+
+video_area:
+  enable: true
+  title: "How We Do It?"
+  sub_title: "Find out everything you need to know <br>about creating a business process model."
+  image: "/assets/images/art/bg10.jpg"
+  video_url: "https://www.youtube.com/watch?v=26TbMXXOe0I"
+
+clients_carousel:
+  enable: true
+
+teams_carousel:
+  enable: true
+  type: "box"
+  title: |
+    Save your time and money <br class="d-none d-lg-block"> by choosing our professional team.
+
+contact_area:
+  enable: true
+  title: "Contact Us"
+  image: "/assets/images/art/map.png"
+  sub_title: |
+   'Convinced yet? Let's make something great together. <br class="d-none d-lg-block">If you got any questions, don't hesitate to get in touch with us.'
+  contact_data:
+    - icon: "/assets/images/icons/ui-gps.png"
+      info: "Moon Street Light Avenue<br> 14/05 Jupiter, JP 80630"
+
+    - icon: "/assets/images/icons/co-telephone.png"
+      info: "00 (123) 456 78 90<br/> 00 (987) 654 32 10"
+
+    - icon: "/assets/images/icons/co-email-5.png"
+      email_01: "manager@email.com"
+      email_02: "asistant@email.com"
+---
+
+<!--about us wrapper-->
+
+<div class="wrapper light-wrapper">
+    <div class="container inner">
+      {% if page.about_area.enable %}
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2 text-center">
+            <div>
+              {% if page.about_area.image %}
+              <figure>
+                <img src="{{page.about_area.image}}" alt="{{page.about_area.title}}"/>
+              </figure>
+              {% endif %}
+              <div class="row counter counter-s position-absolute" style="top: 45%; right: 8%;">
+                <div class="col-md-10 text-center">
+                  <div class="box bg-white shadow">
+                    {% if page.about_area.projects_number %}
+                     <h3><span class="value">{{page.about_area.projects_number}}</span>+</h3>
+                    {% endif %}
+                    {% if page.about_area.project_tag %}
+                     <p>{{page.about_area.project_tag}}</p>
+                    {% endif %}
+                  </div>
+                  <!--/.box -->
+                </div>
+                <!--/column -->
+              </div>
+              <!--/.row -->
+            </div>
+          </div>
+          <!--/column -->
+          <div class="space30 d-none d-md-block d-lg-none"></div>
+          <div class="col-lg-6 pr-60 pr-md-15">
+            {% if page.about_area.title %}
+             <h2 class="section-title mb-20">{{ page.about_area.title }}</h2>
+            {% endif %}
+            {% if  page.about_area.sub_title %}
+             <p class="lead larger">{{page.about_area.sub_title}}</p>
+            {% endif %}
+            <div class="space20"></div>
+            <ul class="progress-list">
+              {% for skills in page.about_area.skills %}
+              <li>
+                <p>{{skills.title}}</p>
+                <div class="progressbar line {{skills.style}}" data-value="{{skills.numbers}}"></div>
+              </li>
+              {% endfor %}
+            </ul>
+            <!-- /.progress-list -->
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row --> 
+        {% endif %}
+    </div>
+  </div>
+  <!--wrapper About Us-->
+<!--wrapper video CTA-->
+{% if page.video_area.enable %}
+  <div class="video-area">
+  <div class="wrapper image-wrapper bg-image gradient-overlay inverse-text" data-image-src="{{page.video_area.image}}">
+    <div class="container inner pt-140 pb-140 text-center">
+      <div class="row">
+        <div class="col-md-7 mx-auto">
+          <h2 class="section-title text-center">{{page.video_area.title}}</h2>
+          <p class="lead larger text-center">{{page.video_area.sub_title}}</p>
+          <div class="space10"></div>
+          <div class="light-gallery-wrapper">
+            <a href="{{page.video_area.video_url}}" class="btn-play lightbox"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  {% endif %}
+<!--/.wrapper video CTA-->
+<!-- clients carousel wrapper-->
+<div class="wrapper gray-wrapper">
+    <div class="container inner">
+        {% if page.clients_carousel.enable %}
+      
+      {% include clients_carousel.html %}
+      {% endif %}
+    </div>
+</div>
+<!--/.wrapper clients carousel-->
+<!-- wrapper team members-->
+{% include team_members.html %}
+<!--/.wrapper team members-->
+<!--contact-->
+{% if page.contact_area.enable %}
+<div class="wrapper image-wrapper bg-auto no-overlay bg-image text-center"
+  data-image-src="{{page.contact_area.image}}">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <h2 class="title-color color-gray text-center">{{page.contact_area.title}}</h2>
+        <h3 class="display-3">{{page.contact_area.sub_title}}</h3>
+        <div class="space50"></div>
+        <div class="row text-center gutter-60">
+          {% for contact_data in page.contact_area.contact_data %}
+          <div class="col-md-4">
+            {% if contact_data.icon %}
+            <div class="icon icon-svg mb-20">
+              <img src="{{contact_data.icon}}" alt="{{contact_data.icon}}" />
+            </div>
+            {% endif %}
+            {% if contact_data.info %}
+            <p class="mb-0">{{contact_data.info}}</p>
+            {% endif %}
+            {% if contact_data.email_01 %}
+            <p class="mb-0"><a class="nocolor" href="mailto:{{contact_data.email_01}}">{{contact_data.email_01}}</a>
+            </p>
+            {% endif %}
+            {% if contact_data.email_02 %}
+            <p class="mb-0"><a class="nocolor" href="mailto:{{contact_data.email_02}}">{{contact_data.email_02}}</a>
+            </p>
+            {% endif %}
+          </div>
+          {% endfor %}
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+{% endif %}
+<div class="space120"></div>
+<!--/.footer Wrapper-->

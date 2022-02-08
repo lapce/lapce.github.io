@@ -1,0 +1,51 @@
+{% if page.contact_form.enable %}
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+        {% if page.contact_form.title %}
+         <h2 class="section-title text-center">{{ page.contact_form.title }}</h2>
+        {% endif %}
+        {% if page.contact_form.sub_title %}
+         <p class="text-center">{{ page.contact_form.sub_title }}</p>
+        {% endif %}
+        <div class="space30"></div>
+        <form id="contact-form" action="https://formsubmit.io/send/{{page.contact_form.action_email}}">
+          <div class="messages"></div>
+          <div class="controls">
+            <div class="form-row">
+              {% for contact_data in page.contact_form.forms_data %}
+              {% if contact_data.field_type == "input" %}
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input id="{{contact_data.field_name}}" type="text" name="{{contact_data.field_name}}" class="form-control" placeholder="{{contact_data.placeholder}} *" required="required" data-error="{{contact_data.error_message}}">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              {% else if contact_data.field_type == "textarea"  %}
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea id="{{contact_data.field_name}}" name="{{contact_data.field_name}}" class="form-control" placeholder="{{contact_data.placeholder}} *" rows="4" required="required" data-error="{{contact_data.error_message}}"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              {% endif %}
+              {% endfor %}
+            </div>
+            <div class="form-row">
+              <div class="col-md-12 text-center">
+                <input type="submit" class="btn btn-send" value="Send message">
+              </div>
+            </div>
+          </div>
+        </form>
+        <!-- /form -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+{% endif %}

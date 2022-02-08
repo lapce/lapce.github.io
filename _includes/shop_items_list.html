@@ -1,0 +1,40 @@
+{% for post in paginator.posts %}
+<div class="item item-detailed grid-sizer col-md-6 col-lg-4">
+  <div class="box bg-white shadow p-30">
+    <figure class="main rounded mb-30">
+      <div class="item-detailed-image">
+        <img src="{{ post.shop_page_cover }}" alt=""/>
+        <img src="{{ post.shop_page_cover_hover }}" alt=""/>
+      </div>
+      <a href="#" class="hover-icon-first" data-tip="Add to Wishlist">
+        <i class="jam jam-heart"></i>
+      </a>
+      <a href="#" class="hover-icon-second" data-tip="Add to cart">
+        <i class="jam jam-shopping-cart"></i>
+      </a>
+      {% if post.label == 'sale' %} <span class="item-label bg-rose">Sale!</span>
+      {% elsif post.label == 'new'%} <span class="item-label bg-meander">New!</span>
+      {% endif %}
+    </figure>
+    <div class="item-content">
+      <h2 class="post-title mb-10">
+        <a href="{{ post.url }}">{{ post.product_info.title }}</a>
+      </h2>
+      <div class="price mb-0">
+        {% if post.product_info.old_price %}
+        <del>
+          <span class="amount">{{ post.product_info.old_price }}</span>
+        </del>
+        <ins>
+        {% endif %}
+          <span class="amount">{{ post.product_info.price }}</span>
+        {% if post.product_info.old_price %} </ins> {% endif %}
+      </div>
+      <span class="ratings {{ post.product_info.rating }}"></span>
+    </div>
+    <!-- /.item-content -->
+  </div>
+  <!-- /.box -->
+</div>
+<!-- /.item -->
+{% endfor %}

@@ -1,0 +1,24 @@
+{% if page.contact_info.enable %}
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <div class="row text-center gutter-60">
+      {% for contact_data in page.contact_info.contact_data %}
+      <div class="col-md-4">
+        {% if contact_data.icon %}
+        <div class="icon icon-svg mb-20">
+          <img src="{{contact_data.icon}}" alt="{{contact_data.info}}"/>
+        </div>
+        {% endif %}
+        {% if contact_data.info %}
+         <p class="mb-0">{{contact_data.info}}</p>
+        {% endif %}
+      </div>
+      <!--/column -->
+      {% endfor %}
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+{% endif %}

@@ -1,0 +1,75 @@
+{% if page.contact_area.enable %}
+<div class="wrapper light-wrapper">
+    <div class="container inner">
+	      {% if page.contact_area.title %}
+          
+	       <h2 class="section-title">{{page.contact_area.title}}</h2>
+	      {% endif %}
+	      {% if page.contact_area.sub_title %}
+	       <p class="lead larger">{{page.contact_area.sub_title}}</p>
+	      {% endif %}
+	      <div class="space40"></div>
+	      <div class="row">
+	        <div class="col-lg-7">
+	          <form id="contact-form" class="fields-white" method="post" action="https://formsubmit.io/send/{{page.contact_area.action_email}}">
+	            <div class="messages"></div>
+	            <div class="controls">
+	              <div class="form-row">
+	              	{% for forms_data in page.contact_area.forms_data %}
+	              	{% if forms_data.field_type == "input" %}
+	                <div class="col-lg-12 col-xl-6">
+	                  <div class="form-group">
+	                    <input id="{{forms_data.field_name}}" type="text" name="{{forms_data.field_name}}" class="form-control" placeholder="{{forms_data.placeholder}}  *" required="required" data-error="{{forms_data.error_message}}">
+	                    <div class="help-block with-errors"></div>
+	                  </div>
+	                </div>
+	                {% else if forms_data.field_type == "textarea" %}
+	                <div class="col-md-12">
+	                  <div class="form-group">
+	                    <textarea id="{{forms_data.field_name}}" name="{{forms_data.field_name}}" class="form-control" placeholder="{{forms_data.placeholder}} *" rows="4" required="required" data-error="{{forms_data.error_message}}"></textarea>
+	                    <div class="help-block with-errors"></div>
+	                  </div>
+	                </div>
+	                {% endif %}
+                    {% endfor %}
+	              </div>
+	              <div class="form-row">
+	                <div class="col-md-12">
+	                  <input type="submit" class="btn btn-send" value="Send message">
+	                </div>
+	              </div>
+	              <div class="form-row">
+	                <div class="col-md-12">
+	                  <p class="text-muted"><strong>*</strong> These fields are required.</p>
+	                </div>
+	              </div>
+	            </div>
+	          </form>
+	          <!-- /form -->
+	        </div>
+	        <!--/column -->
+	        <div class="space30 d-none d-md-block d-lg-none"></div>
+	        <div class="col-lg-4 offset-lg-1">
+	          {% for lists in page.contact_area.lists %}
+	          <div class="d-flex flex-row">
+	            <div>
+	              <div class="icon color-default fs-34 mr-25"> <i class="{{lists.icon}}"></i> </div>
+	            </div>
+	            <div>
+	              <h6 class="mb-5">{{lists.title}}</h6>
+	              <address>{{lists.info_01}} 
+	              	{% if lists.info_02 %}
+	                <br class="d-none d-md-block" />
+	                {{lists.info_02}}
+	               {% endif %}
+	              </address>
+	            </div>
+	          </div>
+              {% endfor %}
+	        </div>
+	        <!--/column -->
+	      </div>
+	      <!--/.row -->
+    </div>
+</div>
+	{% endif %}

@@ -1,0 +1,217 @@
+---
+layout: default
+page_header:
+  enable: true
+  title: "FAQ"
+  sub_title: "How can we help?"
+  button_text: 
+  button_url: "#"
+  background_image: "/assets/images/art/bg1.jpg"
+
+cover_image:
+  enable: true
+  background_image: "/assets/images/art/bg13.jpg"
+
+faq_area:
+  enable: true
+  title: "FAQ" 
+  sub_title: |
+    If you don't see an answer to your question, <br class="d-none d-lg-block">you can send us an email from our contact form
+  faq:
+  - question: "Can I cancel my subscription?"
+    answer: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis."
+  - question: "Which payment methods do you accept?"
+    answer: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis."
+  - question: "How can I manage my Account?"
+    answer: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis."
+  - question: "Is my credit card information secure?"
+    answer: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis."
+  - question: "How do I get my subscription receipt?"
+    answer: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis."
+  - question: "Are there any discounts for people in need?"
+    answer: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis."
+  - question: "Can I cancel my subscription?"
+    answer: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis."
+  - question: "Do you offer a free trial edit?"
+    answer: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis."
+  - question: "How do I reset my Account password?"
+    answer: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis."
+
+contact_area:
+  enable: true
+
+  forms_data: 
+
+    - field_type: "input"
+      field_name: "first_name"
+      placeholder: "First Name" 
+      error_message: "First Name Is required" 
+
+    - field_type: "input"
+      field_name: "last_name"
+      placeholder: "Laast Name" 
+      error_message: "Last Name Is required"
+
+    - field_type: "input"
+      field_name: "user_email"
+      placeholder: "Email"
+      error_message: "Email Is required"
+
+    - field_type: "input"
+      field_name: "user_phone"
+      placeholder: "Phone Number"
+      error_message: "Phone Number Is required"
+
+    - field_type: "textarea"
+      field_name: "user_message"
+      placeholder: "Message"
+      error_message: "Message Is required"
+
+---
+
+{% include header.html container_class="container" extra_class="absolute transparent inverse-text nav-uppercase"
+light_logo="true" %}
+{% if page.page_header.enable %}
+{% assign page_d = page.page_header %}
+<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text"
+    data-image-src="{{page_d.background_image}}">
+    <div class="container inner text-center">
+        <div class="space90"></div>
+        {% if page_d.title %}
+        <h1 class="page-title">{{page_d.title}}</h1>
+        {% endif %}
+        {% if page_d.sub_title %}
+        <p class="lead mb-30">{{page_d.sub_title}}</p>
+        {% endif %}
+        {% if page_d.button_text != null %}
+        <a href="{{page_d.button_url}}" class="btn btn-white btn-strong-hover">{{page_d.button_text}}</a>
+        {% endif %}
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+{% endif %}
+
+<div class="wrapper light-wrapper">
+    <div class="container inner pb-0">
+
+        {% if page.faq_area.enable %}
+        <h3 class="display-3 text-center">{{page.faq_area.sub_title}}</h3>
+        <div class="space40"></div>
+        <div class="row">
+            <div class="col-lg-6 mb-0">
+                <div id="accordion-1" class="accordion-wrapper">
+                    {% for faq in page.faq_area.faq limit: "4" %}
+                    <div class="card">
+                        <div class="card-header" id="accordion-heading-1-{{forloop.index}}">
+                            <h5>
+                                <button class="collapsed" data-toggle="collapse"
+                                    data-target="#accordion-collapse-1-{{forloop.index}}" aria-expanded="false"
+                                    aria-controls="accordion-collapse-1-{{forloop.index}}">
+                                    {{faq.question}}
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="accordion-collapse-1-{{forloop.index}}" class="collapse"
+                            aria-labelledby="accordion-heading-1-{{forloop.index}}"
+                            data-target="#accordion-{{forloop.index}}">
+                            <div class="card-body">
+                                <p>{{faq.answer}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <!--/column -->
+            <div class="col-lg-6">
+                <div id="accordion-2" class="accordion-wrapper">
+                    {% for faq in page.faq_area.faq limit: "4" offset: "4" %}
+                    <div class="card shadow">
+                        <div class="card-header" id="accordion-heading-2-1">
+                            <h5>
+                                <button class="collapsed" data-toggle="collapse"
+                                    data-target="#accordion-collapse-2-{{forloop.index}}" aria-expanded="false"
+                                    aria-controls="accordion-collapse-2-{{forloop.index}}">
+                                    {{faq.question}}
+                                </button>
+                            </h5>
+                        </div>
+                        <!-- /.card-header -->
+                        <div id="accordion-collapse-2-{{forloop.index}}" class="collapse"
+                            aria-labelledby="accordion-heading-2-{{forloop.index}}"
+                            data-target="#accordion-{{forloop.index}}">
+                            <div class="card-body">
+                                <p>{{faq.answer}}</p>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.collapse -->
+                    </div>
+                    {% endfor %}
+                </div>
+                <!-- /.accordion-wrapper -->
+            </div>
+            <!--/column -->
+        </div>
+        <!--/.row -->
+        {% endif %}
+
+        <div class="space120"></div>
+        <!--contact form-->
+        {% if page.contact_area.enable %}
+
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <form id="contact-form" class="fields-white" method="post"
+                    action="https://formsubmit.io/send/{{page.contact_area.action_email}}">
+                    <div class="messages"></div>
+                    <div class="controls">
+                        <div class="form-row">
+                            {% for forms_data in page.contact_area.forms_data %}
+                            {% if forms_data.field_type == "input" %}
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-group">
+                                    <input id="{{forms_data.field_name}}" type="text" name="{{forms_data.field_name}}"
+                                        class="form-control" placeholder="{{forms_data.placeholder}}  *"
+                                        required="required" data-error="{{forms_data.error_message}}">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            {% else if forms_data.field_type == "textarea" %}
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea id="{{forms_data.field_name}}" name="{{forms_data.field_name}}"
+                                        class="form-control" placeholder="{{forms_data.placeholder}} *" rows="4"
+                                        required="required" data-error="{{forms_data.error_message}}"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-send" value="Send message">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- /form -->
+            </div>
+            <!--/column -->
+        </div>
+        <!--/.row -->
+
+        {% endif %}
+        <!--/.contact form-->
+    </div>
+    {% include cover.html %}
+</div>
+
+    {% include footer_3.html light_logo="true" %}

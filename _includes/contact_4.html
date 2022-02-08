@@ -1,0 +1,104 @@
+{% if page.contact_form.enable %}
+<div class="wrapper light-wrapper">
+    <div class="container inner">
+        <div class="boxed">
+            <div class="bg-white shadow rounded">
+                <div class="image-block-wrapper">
+                    <div class="image-block col-lg-6 p-0">
+                        {% include gmap.html extra_class="map-full" %}
+                        <!--/.google-map -->
+                    </div>
+                    <!--/.image-block -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-6">
+                                <div class="box d-flex">
+                                    <div class="align-self-center">
+                                        <h3>{{page.contact_form.title}}</h3>
+                                        <p>{{page.contact_form.sub_title}}</p>
+                                        <ul class="icon-list">
+                                            {% for lists in page.contact_form.lists %}
+
+                                            <li><i class="{{lists.icon}}"></i>{{lists.info_01}}</li>
+
+
+                                            {% endfor %}
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- /.box -->
+                            </div>
+                            <!--/column -->
+                        </div>
+                        <!--/.row -->
+                    </div>
+                    <!--/.container-fluid -->
+                </div>
+                <!--/.image-block-wrapper -->
+            </div>
+            <!-- /.bg -->
+        </div>
+        <!-- /.boxed -->
+        <div class="space90"></div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                {% if page.contact_form.title %}
+
+                <h2 class="section-title text-center">{{page.contact_form.title}}</h2>
+                {% endif %}
+                {% if page.contact_form.sub_title %}
+                <p class="lead larger text-center">{{page.contact_form.sub_title}}</p>
+                {% endif %}
+                <div class="space40"></div>
+                
+                        <form id="contact-form" class="fields-white" method="post"
+                            action="https://formsubmit.io/send/{{page.contact_form.action_email}}">
+                            <div class="messages"></div>
+                            <div class="controls">
+                                <div class="form-row">
+                                    {% for forms_data in page.contact_form.forms_data %}
+                                    {% if forms_data.field_type == "input" %}
+                                    <div class="col-lg-12 col-xl-6">
+                                        <div class="form-group">
+                                            <input id="{{forms_data.field_name}}" type="text"
+                                                name="{{forms_data.field_name}}" class="form-control"
+                                                placeholder="{{forms_data.placeholder}}  *" required="required"
+                                                data-error="{{forms_data.error_message}}">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    {% else if forms_data.field_type == "textarea" %}
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea id="{{forms_data.field_name}}" name="{{forms_data.field_name}}"
+                                                class="form-control" placeholder="{{forms_data.placeholder}} *" rows="4"
+                                                required="required"
+                                                data-error="{{forms_data.error_message}}"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-send" value="Send message">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-12">
+                                        <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- /form -->
+                  
+            </div>
+            <!-- /.container -->
+        </div>
+        </div>
+</div>
+        {% endif %}

@@ -1,0 +1,46 @@
+<div class="wrapper white-wrapper">
+  <div class="container inner pt-10">
+    <div class="basic-slider owl-carousel grid dots-on-top" data-margin="5">
+      {% assign shop_items_featured = site.shop_items | where:"grouped_by","featured" %}
+        {% for product in shop_items_featured limit: 3 %}
+            <div class="item item-detailed">
+              <figure class="rounded mb-20">
+                <div class="item-detailed-image">
+                  <img src="{{ product.shop_page_cover }}" alt="">
+                </div>
+                  <a href="#" class="hover-icon-first" data-tip="Add to Wishlist">
+                    <i class="jam jam-heart"></i>
+                  </a>
+                  <a href="#" class="hover-icon-second" data-tip="Add to cart">
+                    <i class="jam jam-shopping-cart"></i>
+                  </a>
+                  {% if product.label == 'sale' %} <span class="item-label bg-rose">Sale!</span>
+                  {% elsif product.label == 'new'%} <span class="item-label bg-meander">New!</span>
+                  {% endif %}
+                </figure>
+                <div class="item-content">
+                  <h2 class="post-title mb-10">
+                    <a href="{{ product.url }}">{{ product.product_info.title }}</a>
+                  </h2>
+                  <div class="price mb-0">
+                    {% if product.product_info.old_price %}
+                    <del>
+                      <span class="amount">{{ product.product_info.old_price }}</span>
+                    </del>
+                    <ins>
+                    {% endif %}
+                      <span class="amount">{{ product.product_info.price }}</span>
+                    {% if product.product_info.old_price %} </ins> {% endif %}
+                  </div>
+                  <span class="ratings {{ product.product_info.rating }}"></span>
+                </div>
+                <!-- /.item-content -->
+          </div>
+          <!--/.item -->
+
+        {% endfor %}
+    </div>
+    <!-- /.basic-slider -->
+  </div>
+  <!-- /.container -->
+</div>
