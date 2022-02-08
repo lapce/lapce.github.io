@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Eric Mill",
+    "avatar": "/assets/images/art/u1.jpg",
+    "text": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper",
+    "date": "January 14, 2019",
+    "ratings": "three"
+  },
+  {
+    "name": "Nikolas Brooten",
+    "avatar": "/assets/images/art/u2.jpg",
+    "text": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper",
+    "date": "April 4, 2019",
+    "ratings": "five"
+  },
+  {
+    "name": "Lou Bloxham",
+    "avatar": "/assets/images/art/u3.jpg",
+    "text": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper",
+    "date": "May 03, 2019",
+    "ratings": "four"
+  }
+]

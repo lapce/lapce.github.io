@@ -1,0 +1,335 @@
+main_menu:
+
+  - text: "Home"
+    url: "/"
+    menu_type: "megamenu"
+    submenu:
+
+      - text: "Digital Startup"
+        url: "/"
+
+      - text: "Saas Landing"
+        url: "/index-2"
+
+      - text: "SEO Agency"
+        url: "/index-3"
+
+      - text: "Modern Business"
+        url: "/index-4"
+
+      - text: "Design Agency"
+        url: "/index-5"
+
+      - text: "App Presentation"
+        url: "/index-6"
+
+      - text: "Creative Landing"
+        url: "/index-7"
+
+      - text: "Marketing Startup"
+        url: "/index-8"
+
+      - text: "Digital Agency"
+        url: "/index-9"
+
+      - text: "Creative Business"
+        url: "/index-10"
+
+      - text: "Software Landing"
+        url: "/index-11"
+
+      - text: "App Landing"
+        url: "/index-12"
+
+      - text: "Creative Agency"
+        url: "/index-13"
+
+      - text: "Wedding Photography"
+        url: "/index-14"
+
+      - text: "Food Photography"
+        url: "/index-15"
+
+      - text: "Creative Onepage"
+        url: "/index-16"
+
+      - text: "Marketing Company"
+        url: "/index-17"
+
+      - text: "Startup Business"
+        url: "/index-18"
+
+      - text: "Creative Resume"
+        url: "/index-19"
+
+      - text: "Digital Studio"
+        url: "/index-20"
+
+      - text: "Travel Blog"
+        url: "/index-21"
+
+      - text: "Minimal Shop"
+        url: "/index-22"
+
+      - text: "Minimal Portfolio"
+        url: "/index-23"
+
+      - text: "Coming Soon"
+        url: "/index-24"
+
+      - text: "Personal Creative"
+        url: "/index-25"
+
+      - text: "Minimal Photography"
+        url: "/index-26"
+
+      - text: "Maintenance"
+        url: "/index-27"
+
+  - text: "Pages"
+    url: "/"
+    menu_type: "dropdown"
+    has_submenu: "true"
+    
+    label_two:
+      - sub_menu_text: "Services"
+        sub_menu:
+          - text: "Service 01"
+            url: "/services/index"
+
+          - text: "Service 02"
+            url: "/services/index-2"
+
+          - text: "Service 03"
+            url: "/services/index-3"
+
+          - text: "Service 04"
+            url: "/services/index-4"
+
+          - text: "Service 05"
+            url: "/services/index-5"
+ 
+      - sub_menu_text: "About Us"
+        sub_menu:
+          - text: "About 01"
+            url: "/about/about"
+
+          - text: "About 02"
+            url: "/about/about-2"
+
+          - text: "About 03"
+            url: "/about/about-3"
+
+          - text: "About 04"
+            url: "/about/about-4"
+      
+      - sub_menu_text: "Shop"
+        sub_menu:
+          - text: "Shop 01"
+            url: "/shop/index"
+
+          - text: "Shop 02"
+            url: "/shop/index-2"
+
+      - sub_menu_text: "Contact"
+        sub_menu:
+          - text: "Contact 01"
+            url: "/contact/contact-1"
+
+          - text: "Contact 02"
+            url: "/contact/contact-2"
+
+          - text: "Contact 03"
+            url: "/contact/contact-3"
+
+          - text: "Contact 04"
+            url: "/contact/contact-4"
+    submenu:
+
+      - text: "FAQ"
+        url: "/faq"
+
+      - text: "Page Loading "
+        url: "/loading"
+
+      - text: "Page Scrolling"
+        url: "/scroll"
+
+  - text: "Elements"
+    url: "/"
+    menu_type: "megamenu"
+    submenu:
+
+      - text: "Accordion"
+        url: "/elements/accordion"
+
+      - text: "Dividers"
+        url: "/elements/dividers"
+
+      - text: "Lightbox"
+        url: "/elements/lightbox"
+
+      - text: "Tabs"
+        url: "/elements/tabs"
+
+      - text: "Alerts"
+        url: "/elements/alerts"
+
+      - text: "Dropcap"
+        url: "/elements/dropcap"
+
+      - text: "Lists"
+        url: "/elements/lists"
+
+      - text: "Team"
+        url: "/elements/team"
+
+      - text: "Animated Text"
+        url: "/elements/animated_text"
+
+      - text: "Forms"
+        url: "/elements/forms"
+
+      - text: "Media Player"
+        url: "/elements/media_player"
+
+      - text: "Testimonials"
+        url: "/elements/testimonials"
+
+      - text: "Blockquote"
+        url: "/elements/blockquote"
+
+      - text: "Buttons & Badges"
+        url: "/elements/buttons_badges"
+
+      - text: "Call to Action"
+        url: "/elements/call_to_action"
+
+      - text: "Carousel"
+        url: "/elements/carousel"
+
+      - text: "Clients"
+        url: "/elements/clients"
+
+      - text: "Countdown"
+        url: "/elements/countdown"
+
+      - text: "Counter"
+        url: "/elements/counter"
+
+      - text: "Icons - Concept"
+        url: "/elements/icons_concept"
+
+      - text: "Icons - Jam"
+        url: "/elements/icons_jam"
+
+      - text: "Icons - Icofont"
+        url: "/elements/icons_icofont"
+
+      - text: "Icons - Lineal"
+        url: "/elements/icons_lineal"
+
+      - text: "Icon Box"
+        url: "/elements/icon_box"
+
+      - text: "Image Hover"
+        url: "/elements/image_hover"
+
+      - text: "Image Mask"
+        url: "/elements/icons_image_mask"
+
+      - text: "Modal"
+        url: "/elements/modal"
+
+      - text: "Pricing Tables"
+        url: "/elements/pricing"
+
+      - text: "Process Steps"
+        url: "/elements/process_steps"
+
+      - text: "Progress Bar"
+        url: "/elements/progress_bar"
+
+      - text: "Scroll Animations"
+        url: "/elements/scroll_animations"
+
+      - text: "Social Icons"
+        url: "/elements/social_icons"
+
+      - text: "Tables"
+        url: "/elements/tables"
+
+      - text: "Titles"
+        url: "/elements/titles"
+
+      - text: "Toggle"
+        url: "/elements/toggle"
+
+      - text: "Tooltip & Popover"
+        url: "/elements/tooltip_popover"
+
+      - text: "Typography"
+        url: "/elements/typography"
+
+      - text: "Video Popup"
+        url: "/elements/video_popup"
+
+      - text: "Waves"
+        url: "/elements/waves"
+
+      - text: "Wrappers"
+        url: "/elements/wrappers"
+
+  - text: "Portfolio"
+    url: "/portfolios/"
+    submenu:
+      - text: "Portfolio 01"
+        url: "/portfolios/index"
+
+      - text: "Portfolio 02"
+        url: "/portfolios/index-2"
+
+      - text: "Portfolio 03"
+        url: "/portfolios/index-3"
+
+      - text: "Portfolio 04"
+        url: "/portfolios/index-4"
+
+      - text: "Portfolio 05"
+        url: "/portfolios/index-5"
+
+      - text: "Portfolio 06"
+        url: "/portfolios/index-6"
+
+      - text: "Portfolio 07"
+        url: "/portfolios/index-7"
+      
+      - text: "Portfolio 08"
+        url: "/portfolios/index-8"
+
+  - text: "Blog"
+    url: "/"
+    submenu:
+      - text: "Blog 01"
+        url: "/blogs/index"
+
+      - text: "Blog 02"
+        url: "/blogs/index-2"
+
+      - text: "Blog 03"
+        url: "/blogs/index-3"
+
+      - text: "Blog 04"
+        url: "/blogs/index-4"
+
+      - text: "Blog 05"
+        url: "/blogs/index-5"
+
+      - text: "Blog 06"
+        url: "/blogs/index-6"
+
+      - text: "Blog 07"
+        url: "/blogs/index-7"
+
+      - text: "Blog 08"
+        url: "/blogs/index-8"
