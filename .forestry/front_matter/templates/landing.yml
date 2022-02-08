@@ -1,0 +1,222 @@
+---
+label: Landing
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: custom_css
+  label: custom_css
+- type: text
+  name: custom_font
+  label: custom_font
+- type: field_group
+  name: hero_area
+  label: hero_area
+  fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: sub_title
+    label: sub_title
+  - type: file
+    name: big_image
+    label: big_image
+  - type: file
+    name: small_image
+    label: small_image
+  - type: text
+    name: video_url
+    label: video_url
+  - type: text
+    name: button_text
+    label: button_text
+- type: field_group
+  name: features_tab
+  label: features_tab
+  fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: sub_title
+    label: sub_title
+  - type: field_group_list
+    name: lists
+    label: lists
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: file
+      name: icon
+      label: icon
+    - type: field_group
+      name: content
+      label: content
+      fields:
+      - type: text
+        name: title
+        label: title
+      - type: file
+        name: image
+        label: image
+      - type: textarea
+        name: description
+        label: description
+      - type: list
+        name: lists
+        label: lists
+- type: field_group
+  name: two_columns_one
+  label: two_columns_one
+  fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: sub_title
+    label: sub_title
+  - type: file
+    name: image
+    label: image
+  - type: field_group_list
+    name: lists
+    label: lists
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: sub_title
+      label: sub_title
+- type: field_group
+  name: two_column_two
+  label: two_column_two
+  fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: sub_title
+    label: sub_title
+  - type: file
+    name: image
+    label: image
+  - type: field_group_list
+    name: lists
+    label: lists
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: description
+      label: description
+- type: field_group
+  name: progress_area
+  label: progress_area
+  fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: title
+    label: title
+  - type: file
+    name: bg_image
+    label: bg_image
+  - type: field_group_list
+    name: lists
+    label: lists
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: sub_title
+      label: sub_title
+    - type: text
+      name: numbers
+      label: numbers
+    - type: text
+      name: color
+      label: color
+- type: field_group
+  name: pricing_table
+  label: pricing_table
+  fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: sub_title
+    label: sub_title
+  - type: field_group_list
+    name: plans
+    label: plans
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: number
+      name: monthly_price
+      label: monthly_price
+    - type: number
+      name: yearly_price
+      label: yearly_price
+    - type: text
+      name: pricing_url
+      label: pricing_url
+    - type: file
+      name: icon
+      label: icon
+    - type: list
+      name: features
+      label: features
+- type: field_group
+  name: testimonials
+  label: testimonials
+  fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: file
+    name: image
+    label: image
+  - type: field_group_list
+    name: feedback
+    label: feedback
+    fields:
+    - type: textarea
+      name: quote
+      label: quote
+    - type: file
+      name: image
+      label: image
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: designation
+      label: designation
