@@ -22,7 +22,7 @@
         <nav class="flex justify-between p-6 px-4 container mx-auto">
           <div class="flex justify-between items-center w-full">
             <div class="w-1/2 xl:w-1/3">
-              <a class="max-w-max flex justify-center" href="#">
+              <a class="max-w-max flex justify-center" href="/">
                 <img class="h-8" src="https://raw.githubusercontent.com/lapce/lapce/master/extra/images/logo.png"
                   alt="">
                 <p class="text-2xl mx-2 text-coolGray-900">Lapce</p>
@@ -33,13 +33,13 @@
               </ul>
             </div>
             <div class="w-1/2 xl:w-1/3">
-              <div class="hidden xl:flex items-center justify-end">
+              <div class="flex items-center justify-end">
                 <a class="github-button" href="https://github.com/lapce/lapce" data-size="large" data-show-count="true"
                   aria-label="Star lapce/lapce on GitHub">Star</a>
               </div>
             </div>
           </div>
-          <button class="navbar-burger self-center xl:hidden">
+          <button class="navbar-burger self-center hidden">
             <svg width="35" height="35" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect class="text-white" width="32" height="32" rx="6" fill="currentColor"></rect>
               <path class="text-coolGray-500"
@@ -52,7 +52,7 @@
           <div class="fixed top-0 left-0 bottom-0 w-full w-4/6 max-w-xs bg-white">
             <nav class="relative p-6 h-full overflow-y-auto">
               <div class="flex flex-col justify-between h-full">
-                <a class="inline-block" href="#">
+                <a class="inline-block" href="/">
                   <img class="h-8" src="flex-ui-assets/logos/flex-ui-blue-light.svg" alt="">
                 </a>
                 <ul class="py-6">
@@ -89,6 +89,10 @@
               <div class="flex flex-wrap justify-center w-full md:w-auto py-1 md:py-0 center"><a id="download"
                   class="py-5 px-7 w-72 text-base md:text-lg leading-4 text-blue-50 font-medium text-center bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 border border-blue-500 rounded-md shadow-sm"
                   href="#">Download</a>
+              </div>
+              <div class="flex flex-wrap justify-center w-full md:w-auto py-1 md:py-0 center"><a id="download"
+                  class="mt-3 w-60 text-sm leading-4 text-coolGray-900 font-medium text-center  hover:underline shadow-sm"
+                  href="#downloads-all">Other platforms and formats</a>
               </div>
             </div>
             <div class="w-full md:w-3/5 px-4">
@@ -223,23 +227,73 @@
       </div>
     </section>
 
-    <section class="bg-coolGray-50"
-      style="background-image: url('assets/img/pattern-light1.svg'); background-position: center;">
-      <div class="border-b border-coolGray-100"></div>
+    <section id="downloads-all" class="bg-coolGray-50" style="">
       <div class="container px-4 mx-auto">
-        <div class="pt-10 mx-auto max-w-4xl">
-          <a class="md:mx-auto mb-5 max-w-max flex justify-center" href="#">
-            <img class="h-8" src="https://raw.githubusercontent.com/lapce/lapce/master/extra/images/logo.png" alt="">
-            <p class="text-2xl mx-2 text-coolGray-800">Lapce</p>
-          </a>
-        </div>
-        <div class="pb-10 mx-auto max-w-4xl">
-          <a class="md:mx-auto mb-5 max-w-max flex justify-center" target="_blank" href="https://discord.gg/n8tGJ6Rn6D">
-            <img src="https://img.shields.io/discord/946858761413328946?logo=discord" alt="">
-          </a>
+        <div class="flex flex-wrap -mx-4 text-sm py-20">
+          <div class="w-full md:w-1/3 px-4">
+            <div class="flex justify-center mb-10">
+              <img class="h-16" src="assets/img/linux-logo.png" alt="">
+            </div>
+            <div class="flex flex-wrap my-1">
+              <div class="w-1/2 text-right px-1">
+                <p>.tar.gz</p>
+              </div>
+              <div class="w-1/2 px-1">
+                <a class="px-1 py-0 bg-blue-500 rounded-md text-blue-50"
+                  href="https://github.com/lapce/lapce/releases/download/v0.0.9/Lapce-linux.tar.gz">64 bit</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 px-4">
+            <div class="flex justify-center mb-10">
+              <img class="h-16" src="assets/img/windows-logo.png" alt="">
+            </div>
+            <div class="flex flex-wrap my-1">
+              <div class="w-1/2 text-right px-1">
+                <p>System Installer</p>
+              </div>
+              <div class="w-1/2 px-1">
+                <a class="px-1 py-0 bg-blue-500 rounded-md text-blue-50"
+                  href="https://github.com/lapce/lapce/releases/download/v0.0.9/Lapce-windows.msi">64 bit</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 px-4">
+            <div class="flex justify-center mb-10">
+              <img class="h-16" src="assets/img/apple-logo.svg" alt="">
+            </div>
+            <div class="flex flex-wrap my-1">
+              <div class="w-1/2 text-right px-1">
+                <p>.dmg</p>
+              </div>
+              <div class="w-1/2 px-1">
+                <a class="px-1 py-0 bg-blue-500 rounded-md text-blue-50"
+                  href="https://github.com/lapce/lapce/releases/download/v0.0.9/Lapce-macos.dmg">Universal</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+  </div>
+  </section>
+
+  <section class="bg-coolGray-50"
+    style="background-image: url('assets/img/pattern-light1.svg'); background-position: center;">
+    <div class="border-b border-coolGray-100"></div>
+    <div class="container px-4 mx-auto">
+      <div class="pt-10 mx-auto max-w-4xl">
+        <a class="md:mx-auto mb-5 max-w-max flex justify-center" href="#">
+          <img class="h-8" src="https://raw.githubusercontent.com/lapce/lapce/master/extra/images/logo.png" alt="">
+          <p class="text-2xl mx-2 text-coolGray-800">Lapce</p>
+        </a>
+      </div>
+      <div class="pb-10 mx-auto max-w-4xl">
+        <a class="md:mx-auto mb-5 max-w-max flex justify-center" target="_blank" href="https://discord.gg/n8tGJ6Rn6D">
+          <img src="https://img.shields.io/discord/946858761413328946?logo=discord" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
 
   </div>
 </body>
