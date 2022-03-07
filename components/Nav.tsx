@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import GitHubButton from './GitHubButton'
-import logo from '../public/img/lapce.png'
+import logo from 'public/img/lapce.png'
 
 import type { FunctionComponent } from 'react'
 

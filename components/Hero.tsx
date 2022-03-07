@@ -1,7 +1,11 @@
+import Image from 'next/image'
+
 import useDownload from 'hooks/useDownload'
 import Nav from './Nav'
 
 import type { FunctionComponent } from 'react'
+
+import screenshot from 'public/img/screenshot.png'
 
 const Hero: FunctionComponent = () => {
   const [downloadText, downloadLink] = useDownload()
@@ -38,10 +42,13 @@ const Hero: FunctionComponent = () => {
             </div>
             <div className="w-full md:w-3/5 px-4">
               <div className="relative mx-auto md:mr-0 max-w-max">
-                <img
-                  className="relative rounded-7xl"
-                  src="https://raw.githubusercontent.com/lapce/lapce/master/extra/images/screenshot.png"
+                <Image
+                  className="rounded-7xl"
+                  height={526}
+                  width={762}
+                  src={screenshot}
                   alt="Lapce Screenshot"
+                  priority
                 />
               </div>
             </div>
