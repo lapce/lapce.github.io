@@ -12,6 +12,7 @@ function App({ Component, pageProps }: AppProps) {
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name="description" content="Lightning-fast and Powerful Code Editor" />
       <link rel="icon" type="image/png" sizes="16x16" href="/img/lapce.png" />
+      <link rel="canonical" href="https://lapce.dev/" />
     </Head>
     <Component {...pageProps} />
     <Footer />
