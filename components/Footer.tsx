@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { FunctionComponent } from 'react'
 
+const discord = 'https://img.shields.io/discord/946858761413328946?logo=discord'
+
 const Footer: FunctionComponent = () => {
   return (
     <footer
@@ -16,7 +18,7 @@ const Footer: FunctionComponent = () => {
           </a>
         </Link>
         <a target="_blank" rel="noreferrer" href="https://discord.gg/n8tGJ6Rn6D">
-          <Image height={20} width={111} src="https://img.shields.io/discord/946858761413328946?logo=discord" alt="Discord Logo" />
+          <Image height={20} width={111} loader={()=>discord} src={discord} alt="Discord Logo" />
         </a>
       </div>
     </footer>
