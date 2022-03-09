@@ -1,14 +1,15 @@
+import { FunctionComponent } from 'react'
 import Image from 'next/image'
 
 import useDownload from 'hooks/useDownload'
 import Nav from './Nav'
 
-import type { FunctionComponent } from 'react'
-
 import screenshot from 'assets/img/screenshot.png'
+import useOS from 'hooks/useOS'
 
 const Hero: FunctionComponent = () => {
-  const [downloadText, downloadLink] = useDownload()
+  const os = useOS()
+  const downloadLink = useDownload(os)
 
   return (
     <section
@@ -26,8 +27,13 @@ const Hero: FunctionComponent = () => {
                 <a
                   className="py-5 px-7 w-72 text-base md:text-lg leading-4 text-blue-50 font-medium text-center bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 border border-blue-500 rounded-md shadow-sm"
                   href={downloadLink}
+                  id="download-btn"
                 >
-                  Download for {downloadText}
+                  Download for {{
+                    'win': 'Windows',
+                    'mac': 'macOS',
+                    'linux': 'Linux'
+                  }[os]}
                 </a>
               </div>
               <div className="flex flex-wrap justify-center w-full md:w-auto py-1 md:py-0 center">

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-type OS = 'win' | 'mac' | 'linux'
+export type OS = 'win' | 'mac' | 'linux'
 
 export default function useOS() {
   const [os, setOS] = useState<OS>('mac')

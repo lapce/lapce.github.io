@@ -1,34 +1,33 @@
 import { useState, useEffect } from 'react'
 import useSWR from 'swr'
 
-import useOS from './useOS'
+import useOS, { OS } from './useOS'
 
 const fetcher = (url: RequestInfo, args?: RequestInit) => fetch(url, args).then(res => res.json())
 
-export default function useDownload() {
+export default function useDownload(os: OS) {
   const [url, setUrl] = useState('#')
-  const [filename, setFilename] = useState(['macOS', ''])
-  const os = useOS()
+  const [filename, setFilename] = useState('')
   const { data } = useSWR('/api/release', fetcher)
 
   useEffect(() => {
     switch (os) {
       case 'win':
-        setFilename(['Windows', 'Lapce-windows.msi'])
+        setFilename('Lapce-windows.msi')
         break
       case 'linux':
-        setFilename(['Linux', 'Lapce-linux.tar.gz'])
+        setFilename('Lapce-linux.tar.gz')
         break
       default:
-        setFilename(['macOS', 'Lapce-macos.dmg'])
+        setFilename('Lapce-macos.dmg')
     }
   }, [os])
 
   useEffect(() => {
     if (!data?.assets) return
 
-    setUrl(data.assets.map(({ browser_download_url }) => browser_download_url).filter((x) => x.endsWith(filename[1]))[0])
+    setUrl(data.assets.map(({ browser_download_url }) => browser_download_url).filter((x) => x.endsWith(filename))[0])
   }, [filename, data])
 
-  return [filename[0], url]
+  return url
 }
