@@ -1,11 +1,9 @@
-import Image from 'next/image'
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 
 import GitHubButton from './GitHubButton'
 
 import type { FunctionComponent } from 'react'
-
-import logo from 'assets/img/lapce.png'
 
 const Nav: FunctionComponent = () => {
   return (
@@ -14,13 +12,10 @@ const Nav: FunctionComponent = () => {
         <div>
           <Link href="/" passHref>
             <a className="max-w-max flex items-center space-x-2">
-              <Image
-                height={48}
-                width={48}
-                src={logo}
+              <img
+                className="h-12"
+                src="/img/lapce.png"
                 alt="Lapce Logo"
-                priority
-                placeholder="blur"
               />
               <p className="text-2xl text-coolGray-900">Lapce</p>
             </a>

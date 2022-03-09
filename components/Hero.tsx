@@ -1,10 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import { FunctionComponent } from 'react'
-import Image from 'next/image'
 
 import useDownload from 'hooks/useDownload'
 import Nav from './Nav'
 
-import screenshot from 'assets/img/screenshot.png'
 import useOS from 'hooks/useOS'
 
 const Hero: FunctionComponent = () => {
@@ -48,14 +47,12 @@ const Hero: FunctionComponent = () => {
             </div>
             <div className="w-full md:w-3/5 px-4">
               <div className="relative mx-auto md:mr-0 max-w-max">
-                <Image
+                <img
                   className="rounded-7xl"
                   height={526}
                   width={762}
-                  src={screenshot}
+                  src="/img/screenshot.png"
                   alt="Lapce Screenshot"
-                  priority
-                  placeholder="blur"
                 />
               </div>
             </div>

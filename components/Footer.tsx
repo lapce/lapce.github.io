@@ -3,8 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { FunctionComponent } from 'react'
 
-import lapce from 'assets/img/lapce.png'
-
 const Footer: FunctionComponent = () => {
   return (
     <footer
@@ -14,7 +12,7 @@ const Footer: FunctionComponent = () => {
       <div className="container mx-auto max-w-4xl flex flex-col py-16 space-y-8 justify-center items-center">
         <Link href="/" passHref>
           <a className="max-w-max flex items-center space-x-2">
-            <Image height={48} width={48} src={lapce} priority alt="Lapce Logo" />
+            <Image height={48} width={48} src="/img/lapce.png" priority alt="Lapce Logo" />
             <p className="text-2xl text-coolGray-800">Lapce</p>
           </a>
         </Link>
