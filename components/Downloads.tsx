@@ -17,7 +17,7 @@ const Download: FunctionComponent<DownloadProps> = ({ img, files }) => {
   return (
     <div className="w-full md:w-1/3 px-8">
       <div className="flex justify-center my-10">
-        <Image height={64} width={64} src={img.src} alt={img.alt} />
+        <Image height={64} width={64} src={img.src} alt={img.alt} priority />
       </div>
       <div className="grid grid-cols-1 gap-4">
         {files.map(({ name, label, href }, index) => <a key={index} href={href} className="flex justify-center items-center rounded bg-blue-500 hover:bg-blue-700 hover:shadow text-white px-6 py-2">

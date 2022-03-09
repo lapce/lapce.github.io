@@ -5,7 +5,7 @@ import Nav from './Nav'
 
 import type { FunctionComponent } from 'react'
 
-import screenshot from 'public/img/screenshot.png'
+import screenshot from 'assets/img/screenshot.png'
 
 const Hero: FunctionComponent = () => {
   const [downloadText, downloadLink] = useDownload()
@@ -49,6 +49,7 @@ const Hero: FunctionComponent = () => {
                   src={screenshot}
                   alt="Lapce Screenshot"
                   priority
+                  placeholder="blur"
                 />
               </div>
             </div>

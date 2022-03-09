@@ -2,9 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import GitHubButton from './GitHubButton'
-import logo from 'public/img/lapce.png'
 
 import type { FunctionComponent } from 'react'
+
+import logo from 'assets/img/lapce.png'
 
 const Nav: FunctionComponent = () => {
   return (
@@ -18,6 +19,8 @@ const Nav: FunctionComponent = () => {
                 width={48}
                 src={logo}
                 alt="Lapce Logo"
+                priority
+                placeholder="blur"
               />
               <p className="text-2xl text-coolGray-900">Lapce</p>
             </a>
