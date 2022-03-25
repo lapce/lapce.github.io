@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
     switch (OSName) {
         case "win":
             download.innerText = "Download for Windows";
-            download.setAttribute("href", "https://github.com/lapce/lapce/releases/download/v0.0.12Lapce-windows.msi")
+            download.setAttribute("href", "https://github.com/lapce/lapce/releases/download/v0.0.12/Lapce-windows.msi")
             break;
         case "mac":
             download.innerText = "Download for macOS";
