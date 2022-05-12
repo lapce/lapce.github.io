@@ -58,15 +58,15 @@ document.addEventListener('DOMContentLoaded', function () {
     switch (OSName) {
         case "win":
             download.innerText = "Download for Windows";
-            download.setAttribute("href", "https://github.com/lapce/lapce/releases/download/v0.0.12/Lapce-windows.msi")
+            download.setAttribute("href", "https://github.com/lapce/lapce/releases/download/v0.1.0/Lapce-windows.msi")
             break;
         case "mac":
             download.innerText = "Download for macOS";
-            download.setAttribute("href", "https://github.com/lapce/lapce/releases/download/v0.0.12/Lapce-macos.dmg")
+            download.setAttribute("href", "https://github.com/lapce/lapce/releases/download/v0.1.0/Lapce-macos.dmg")
             break;
         case "linux":
             download.innerText = "Download for Linux";
-            download.setAttribute("href", "https://github.com/lapce/lapce/releases/download/v0.0.12/Lapce-linux.tar.gz")
+            download.setAttribute("href", "https://github.com/lapce/lapce/releases/download/v0.1.0/Lapce-linux.tar.gz")
             break;
     }
 });
