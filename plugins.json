@@ -1,10 +1,10 @@
 [
     "lapce/lapce-rust",
+    "panekj/lapce-cpp-clangd",
     "MinusGix/lapce-aleph",
     "VixieTSQ/lapce-solarized",
     "ghishadow/light-pink-theme",
     "Kirottu/lapce-adwaita",
     "Zooce/lapce-gruvbox-ish",
-    "ghishadow/lapce-catppuccin",
-    "panekj/lapce-cpp-clangd",
+    "ghishadow/lapce-catppuccin"
 ]
