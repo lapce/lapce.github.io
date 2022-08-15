@@ -4,6 +4,7 @@
 		"version": "0.1.0",
 		"display-name": "Rust",
 		"publisher": "Lapce",
-		"description": "Rust for Lapce: powered by Rust Analyzer"
+		"description": "Rust for Lapce: powered by Rust Analyzer",
+		"meta": "https://raw.githubusercontent.com/lapce/lapce-rust/volt/volt.toml"
 	}
 ]
