@@ -1,0 +1,9 @@
+[
+	{
+		"name": "lapce-rust",
+		"version": "0.1.0",
+		"display-name": "Rust",
+		"publisher": "Lapce",
+		"description": "Rust for Lapce: powered by Rust Analyzer"
+	}
+]
