@@ -3,8 +3,16 @@
 		"name": "lapce-rust",
 		"version": "0.1.0",
 		"display-name": "Rust",
-		"publisher": "Lapce",
+		"author": "Lapce",
 		"description": "Rust for Lapce: powered by Rust Analyzer",
 		"meta": "https://raw.githubusercontent.com/lapce/lapce-rust/volt/volt.toml"
+	},
+	{
+		"name": "aleph",
+		"version": "0.3.0",
+		"display-name": "Aleph",
+		"author": "MinusGix",
+		"description": "Dark and colorful theme",
+		"meta": "https://raw.githubusercontent.com/MinusGix/lapce-aleph/master/plugin.toml"
 	}
 ]
