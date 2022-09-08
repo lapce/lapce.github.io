@@ -81,7 +81,7 @@
 	},
 	{
 		"name": "discord",
-		"version": "0.1.0",
+		"version": "0.1.1",
 		"display-name": "Discord",
 		"author": "SleepyKitten",
 		"description": "Discord like theme",
