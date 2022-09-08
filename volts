@@ -81,11 +81,11 @@
 	},
 	{
 		"name": "discord",
-		"version": "0.1.0",
+		"version": "0.1.1",
 		"display-name": "Discord",
 		"author": "SleepyKitten",
 		"description": "Discord like theme",
-		"meta": "https://raw.githubusercontent.com/Sleepy-Kitten/lapce-discord/main/plugin.toml"
+		"meta": "https://raw.githubusercontent.com/Sleepy-Kitten/lapce-discord/main/volt.toml"
 	},
 	{
 		"name": "dark-forest",
