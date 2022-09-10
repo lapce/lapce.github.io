@@ -9,11 +9,11 @@
 	},
 	{
 		"name": "lapce-cpp-clangd",
-		"version": "0.0.4",
+		"version": "1.0.0",
 		"display-name": "C/C++ (clangd)",
 		"author": "panekj",
 		"description": "C/C++ for Lapce: powered by clangd",
-		"meta": "https://raw.githubusercontent.com/panekj/lapce-cpp-clangd/master/plugin.toml"
+		"meta": "https://raw.githubusercontent.com/lapce-community/lapce-cpp-clangd/HEAD/volt.toml"
 	},
 	{
 		"name": "lapce-python",
