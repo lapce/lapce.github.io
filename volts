@@ -105,10 +105,10 @@
 	},
 	{
 		"name": "rose-pine",
-		"version": "0.1.0",
+		"version": "0.1.9",
 		"display-name": "Rosé Pine",
 		"author": "ghishadow",
 		"description": "Soho vibes for Lapce",
-		"meta": "https://raw.githubusercontent.com/ghishadow/rose-pine-lapce/master/plugin.toml"
+		"meta": "https://raw.githubusercontent.com/ghishadow/rose-pine-lapce/master/volt.toml"
 	}
 ]
