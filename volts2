@@ -1,0 +1,114 @@
+[
+	{
+		"name": "lapce-rust",
+		"version": "0.1.11",
+		"display-name": "Rust",
+		"author": "Lapce",
+		"description": "Rust for Lapce: powered by Rust Analyzer",
+		"meta": "https://raw.githubusercontent.com/lapce/lapce-rust/master/volt.toml"
+	},
+	{
+		"name": "lapce-cpp-clangd",
+		"version": "0.0.4",
+		"display-name": "C/C++ (clangd)",
+		"author": "panekj",
+		"description": "C/C++ for Lapce: powered by clangd",
+		"meta": "https://raw.githubusercontent.com/panekj/lapce-cpp-clangd/master/plugin.toml"
+	},
+	{
+		"name": "lapce-python",
+		"version": "0.3.0",
+		"display-name": "Python",
+		"author": "various",
+		"description": "Python for Lapce: powered by https://github.com/python-lsp/python-lsp-server",
+		"meta": "https://raw.githubusercontent.com/superlou/lapce-python/master/plugin.toml"
+	},
+	{
+		"name": "aleph",
+		"version": "0.3.0",
+		"display-name": "Aleph",
+		"author": "MinusGix",
+		"description": "Dark and colorful theme",
+		"meta": "https://raw.githubusercontent.com/MinusGix/lapce-aleph/master/plugin.toml"
+	},
+	{
+		"name": "solarized",
+		"version": "0.1.2",
+		"display-name": "Solarized",
+		"author": "VixieTSQ",
+		"description": "Lapce themes for dark and light solarized",
+		"meta": "https://raw.githubusercontent.com/VixieTSQ/lapce-solarized/main/plugin.toml"
+	},
+	{
+		"name": "lightpink",
+		"version": "0.2.2",
+		"display-name": "Light Pink",
+		"author": "ghishadow",
+		"description": "Cute Light Pink",
+		"meta": "https://raw.githubusercontent.com/ghishadow/light-pink-theme/main/plugin.toml"
+	},
+	{
+		"name": "lapce-adwaita",
+		"version": "0.1.1",
+		"display-name": "Adwaita",
+		"author": "Kirottu",
+		"description": "Lapce adaptation of the Adwaita color scheme",
+		"meta": "https://raw.githubusercontent.com/Kirottu/lapce-adwaita/master/plugin.toml"
+	},
+	{
+		"name": "gruvbox-ish",
+		"version": "0.1.0",
+		"display-name": "Gruvbox-ish",
+		"author": "Zooce",
+		"description": "Kind of like Gruvbox",
+		"meta": "https://raw.githubusercontent.com/Zooce/lapce-gruvbox-ish/main/plugin.toml"
+	},
+	{
+		"name": "catppuccin",
+		"version": "0.1.7",
+		"display-name": "Catppuccin",
+		"author": "ghishadow",
+		"description": "🐭 Soothing pastel theme for Lapce",
+		"meta": "https://raw.githubusercontent.com/ghishadow/lapce-catppuccin/main/plugin.toml"
+	},
+	{
+		"name": "sweet-raw",
+		"version": "0.0.3",
+		"display-name": "Sweet Raw",
+		"author": "felipetesc",
+		"description": "Dark theme inspired on Sweet Theme",
+		"meta": "https://raw.githubusercontent.com/felipetesc/lapce-sweetraw-theme/main/plugin.toml"
+	},
+	{
+		"name": "discord",
+		"version": "0.1.0",
+		"display-name": "Discord",
+		"author": "SleepyKitten",
+		"description": "Discord like theme",
+		"meta": "https://raw.githubusercontent.com/Sleepy-Kitten/lapce-discord/main/plugin.toml"
+	},
+	{
+		"name": "dark-forest",
+		"version": "0.1.0",
+		"display-name": "Dark Forest",
+		"author": "MinusGix",
+		"description": "A dimly lit forest",
+		"meta": "https://raw.githubusercontent.com/MinusGix/lapce-dark-forest/master/plugin.toml"
+	},
+	{
+		"name": "monokai-pro",
+		"version": "0.0.2",
+		"display-name": "Monokai Pro",
+		"author": "jath03",
+		"description": "Monokai Pro theme generated using subtheme",
+		"meta": "https://raw.githubusercontent.com/jath03/lapce-monokai-pro/master/plugin.toml"
+	},
+	{
+		"name": "rose-pine",
+		"version": "0.1.0",
+		"display-name": "Rosé Pine",
+		"author": "ghishadow",
+		"description": "Soho vibes for Lapce",
+		"meta": "https://raw.githubusercontent.com/ghishadow/rose-pine-lapce/master/plugin.toml"
+	}
+]
