@@ -110,5 +110,13 @@
 		"author": "ghishadow",
 		"description": "Soho vibes for Lapce",
 		"meta": "https://raw.githubusercontent.com/ghishadow/rose-pine-lapce/master/plugin.toml"
+	},
+	{
+		"name": "amolapce",
+		"version": "0.0.5",
+		"display-name": "Amolapce",
+		"author": "Ereshkigal",
+		"description": "True dark theme for lapce",
+		"meta": "https://raw.githubusercontent.com/Ereshkigal01/Amolapce/main/volt.toml"
 	}
 ]
