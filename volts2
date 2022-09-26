@@ -118,5 +118,13 @@
 		"author": "Ereshkigal",
 		"description": "True dark theme for lapce",
 		"meta": "https://raw.githubusercontent.com/Ereshkigal01/Amolapce/main/volt.toml"
+	},
+	{
+		"name": "material-dark-orange",
+		"version": "0.1.0",
+		"display-name": "Material Dark Orange",
+		"author": "Hector Lobato",
+		"description": "My theme based on Material Theme with orange accent color",
+		"meta": "https://raw.githubusercontent.com/HectorLobatoSilva/lapce-material-dark-theme/main/plugin.toml"
 	}
 ]
