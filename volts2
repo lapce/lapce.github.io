@@ -9,11 +9,27 @@
 	},
 	{
 		"name": "lapce-cpp-clangd",
-		"version": "0.0.4",
+		"version": "1.0.0",
 		"display-name": "C/C++ (clangd)",
 		"author": "panekj",
 		"description": "C/C++ for Lapce: powered by clangd",
-		"meta": "https://raw.githubusercontent.com/panekj/lapce-cpp-clangd/master/plugin.toml"
+		"meta": "https://raw.githubusercontent.com/lapce-community/lapce-cpp-clangd/HEAD/volt.toml"
+	},
+	{
+		"name": "lapce-typescript",
+		"version": "1.0.0",
+		"display-name": "Typescript / Javascript",
+		"author": "panekj",
+		"description": "TS/JS for Lapce: powered by typescript-language-server",
+		"meta": "https://raw.githubusercontent.com/panekj/lapce-typescript/HEAD/volt.toml"
+	},
+	{
+		"name": "lapce-yaml",
+		"version": "0.0.1",
+		"display-name": "YAML",
+		"author": "panekj",
+		"description": "YAML for Lapce: powered by yaml-language-server",
+		"meta": "https://raw.githubusercontent.com/lapce-community/lapce-yaml/HEAD/volt.toml"
 	},
 	{
 		"name": "lapce-python",
