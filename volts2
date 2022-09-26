@@ -134,5 +134,13 @@
 		"author": "Ereshkigal",
 		"description": "True dark theme for lapce",
 		"meta": "https://raw.githubusercontent.com/Ereshkigal01/Amolapce/main/volt.toml"
+	},
+	{
+		"name": "black-iris",
+		"version": "0.2.0",
+		"display-name": "Black Iris",
+		"author": "p-yukusai",
+		"description": "An opinionated dark theme based on blai30's Lotus",
+		"meta": "https://raw.githubusercontent.com/p-yukusai/black-iris/main/plugin.toml"
 	}
 ]
