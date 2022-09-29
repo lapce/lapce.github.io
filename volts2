@@ -81,7 +81,7 @@
     },
     {
         "name": "catppuccin",
-        "version": "0.1.7",
+        "version": "0.1.8",
         "display-name": "Catppuccin",
         "author": "ghishadow",
         "description": "🐭 Soothing pastel theme for Lapce",
@@ -97,11 +97,11 @@
     },
     {
         "name": "discord",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "display-name": "Discord",
         "author": "SleepyKitten",
         "description": "Discord like theme",
-        "meta": "https://raw.githubusercontent.com/Sleepy-Kitten/lapce-discord/main/plugin.toml"
+        "meta": "https://raw.githubusercontent.com/Sleepy-Kitten/lapce-discord/main/volt.toml"
     },
     {
         "name": "dark-forest",
@@ -121,11 +121,11 @@
     },
     {
         "name": "rose-pine",
-        "version": "0.1.0",
+        "version": "0.1.9",
         "display-name": "Rosé Pine",
         "author": "ghishadow",
         "description": "Soho vibes for Lapce",
-        "meta": "https://raw.githubusercontent.com/ghishadow/rose-pine-lapce/master/plugin.toml"
+        "meta": "https://raw.githubusercontent.com/ghishadow/rose-pine-lapce/master/volt.toml"
     },
     {
         "name": "amolapce",
