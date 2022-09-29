@@ -40,6 +40,14 @@
         "meta": "https://raw.githubusercontent.com/superlou/lapce-python/volt/plugin.toml"
     },
     {
+        "name": "lapce-dart",
+        "version": "0.0.1",
+        "display-name": "Dart",
+        "author": "zarathir",
+        "description": "Dart for Lapce: powered by dart language-server",
+        "meta": "https://raw.githubusercontent.com/zarathir/lapce-dart/master/volt.toml"
+    },
+    {
         "name": "aleph",
         "version": "0.3.0",
         "display-name": "Aleph",
