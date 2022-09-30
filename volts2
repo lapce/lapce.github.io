@@ -1,7 +1,7 @@
 [
     {
         "name": "lapce-rust",
-        "version": "0.1.11",
+        "version": "0.1.12",
         "display-name": "Rust",
         "author": "Lapce",
         "description": "Rust for Lapce: powered by Rust Analyzer",
@@ -158,8 +158,7 @@
         "author": "Hector Lobato",
         "description": "My theme based on Material Theme with orange accent color",
         "meta": "https://raw.githubusercontent.com/HectorLobatoSilva/lapce-material-dark-theme/main/plugin.toml"
-    }
-    ,
+    },
     {
         "name": "minimal-mistakes",
         "version": "1.0.0",
