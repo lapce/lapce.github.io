@@ -159,4 +159,13 @@
         "description": "My theme based on Material Theme with orange accent color",
         "meta": "https://raw.githubusercontent.com/HectorLobatoSilva/lapce-material-dark-theme/main/plugin.toml"
     }
+    ,
+    {
+        "name": "minimal-mistakes",
+        "version": "1.0.0",
+        "display-name": "Minimal-Mistakes",
+        "author": "Minimal-Mistakes",
+        "description": "The Iconic Minimal-Mistakes Theme",
+        "meta": "https://raw.githubusercontent.com/Minimal-Mistakes/lapce/main/plugin.toml"
+    }
 ]
