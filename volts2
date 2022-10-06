@@ -48,6 +48,14 @@
         "meta": "https://raw.githubusercontent.com/zarathir/lapce-dart/master/volt.toml"
     },
     {
+        "name": "lapce-java",
+        "version": "0.1.0",
+        "display-name": "Java",
+        "author": "Oknozor",
+        "description": "Java for Lapce: powered by Eclipse JDT Language Server",
+        "meta": "https://raw.githubusercontent.com/oknozor/lapce-java/master/volt.toml"
+    },
+    {
         "name": "aleph",
         "version": "0.3.0",
         "display-name": "Aleph",
