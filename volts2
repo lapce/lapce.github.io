@@ -32,6 +32,14 @@
         "meta": "https://raw.githubusercontent.com/lapce-community/lapce-yaml/HEAD/volt.toml"
     },
     {
+        "name": "lapce-go",
+        "version": "1.0.0",
+        "display-name": "Go",
+        "author": "panekj",
+        "description": "Go for Lapce using gopls",
+        "meta": "https://raw.githubusercontent.com/panekj/lapce-go/HEAD/volt.toml"
+    },
+    {
         "name": "lapce-python",
         "version": "0.3.0",
         "display-name": "Python",
