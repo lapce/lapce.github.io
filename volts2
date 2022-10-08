@@ -40,6 +40,22 @@
         "meta": "https://raw.githubusercontent.com/panekj/lapce-go/HEAD/volt.toml"
     },
     {
+        "name": "lapce-terraform-ls",
+        "version": "0.0.0",
+        "display-name": "Terraform",
+        "author": "panekj",
+        "description": "Terraform language support for Lapce",
+        "meta": "https://raw.githubusercontent.com/panekj/lapce-terraform-ls/HEAD/volt.toml"
+    },
+    {
+        "name": "lapce-toml",
+        "version": "0.0.0",
+        "display-name": "TOML",
+        "author": "panekj",
+        "description": "TOML language support for Lapce",
+        "meta": "https://raw.githubusercontent.com/panekj/lapce-toml/HEAD/volt.toml"
+    },
+    {
         "name": "lapce-python",
         "version": "0.3.0",
         "display-name": "Python",
