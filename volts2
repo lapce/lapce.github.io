@@ -64,6 +64,14 @@
         "meta": "https://raw.githubusercontent.com/oknozor/lapce-java/master/volt.toml"
     },
     {
+        "name": "lapce-vue",
+        "version": "0.0.1",
+        "display-name": "Vue",
+        "author": "xiaoxin-sky",
+        "description": "Vue for Lapce: powered by volar",
+        "meta": "https://raw.githubusercontent.com/xiaoxin-sky/lapce-vue/master/volt.toml"
+    },
+    {
         "name": "aleph",
         "version": "0.3.0",
         "display-name": "Aleph",
