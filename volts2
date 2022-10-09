@@ -1,7 +1,7 @@
 [
     {
         "name": "lapce-rust",
-        "version": "0.1.12",
+        "version": "0.2.1",
         "display-name": "Rust",
         "author": "Lapce",
         "description": "Rust for Lapce: powered by Rust Analyzer",
