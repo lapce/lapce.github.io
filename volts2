@@ -56,6 +56,14 @@
         "meta": "https://raw.githubusercontent.com/panekj/lapce-toml/HEAD/volt.toml"
     },
     {
+        "name": "lapce-vscode-theme",
+        "version": "0.0.0",
+        "display-name": "Visual Studio Code",
+        "author": "panekj",
+        "description": "Themes based on VS Code default looks",
+        "meta": "https://raw.githubusercontent.com/panekj/lapce-vscode-theme/HEAD/volt.toml"
+    },
+    {
         "name": "lapce-python",
         "version": "0.3.0",
         "display-name": "Python",
