@@ -33,7 +33,7 @@
     },
     {
         "name": "lapce-go",
-        "version": "1.0.0",
+        "version": "2.0.0",
         "display-name": "Go",
         "author": "panekj",
         "description": "Go for Lapce using gopls",
