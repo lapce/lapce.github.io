@@ -217,10 +217,10 @@
     },
     {
         "name": "lapce-julia",
-        "version": "1.0.0",
-        "display-name": "Julia (LanguageServer.jl)",
+        "version": "0.0.1",
+        "display-name": "Julia",
         "author": "VarLad",
-        "description": "Julia for Lapce: powered by LanguageServer.jl",
+        "description": "Julia plugin for Lapce",
         "meta": "https://raw.githubusercontent.com/VarLad/lapce-julia/master/volt.toml"
     }
 ]
