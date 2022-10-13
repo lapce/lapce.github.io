@@ -214,5 +214,13 @@
         "author": "Minimal-Mistakes",
         "description": "The Iconic Minimal-Mistakes Theme",
         "meta": "https://raw.githubusercontent.com/Minimal-Mistakes/lapce/main/plugin.toml"
+    },
+    {
+        "name": "lapce-julia",
+        "version": "0.0.1",
+        "display-name": "Julia",
+        "author": "VarLad",
+        "description": "Julia plugin for Lapce",
+        "meta": "https://raw.githubusercontent.com/VarLad/lapce-julia/master/volt.toml"
     }
 ]
