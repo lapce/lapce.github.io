@@ -81,7 +81,7 @@
     },
     {
         "name": "lapce-java",
-        "version": "0.1.0",
+        "version": "0.2.0",
         "display-name": "Java",
         "author": "Oknozor",
         "description": "Java for Lapce: powered by Eclipse JDT Language Server",
