@@ -17,7 +17,7 @@
 	},
 	{
 		"name": "lapce-python",
-		"version": "0.3.0",
+		"version": "0.3.1",
 		"display-name": "Python",
 		"author": "various",
 		"description": "Python for Lapce using python-lsp-server",
