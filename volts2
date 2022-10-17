@@ -17,7 +17,7 @@
     },
     {
         "name": "lapce-typescript",
-        "version": "1.0.0",
+        "version": "1.0.2",
         "display-name": "Typescript / Javascript",
         "author": "panekj",
         "description": "TS/JS for Lapce: powered by typescript-language-server",
