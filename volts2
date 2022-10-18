@@ -224,10 +224,11 @@
         "meta": "https://raw.githubusercontent.com/VarLad/lapce-julia/master/volt.toml"
     },
     {
-        "name" = "castle",
+        "name": "castle",
         "version": "0.1.0",
-        "display-name" = "Castle",
-        "author" = "Ionut Rogojan",
+        "display-name": "Castle",
+        "author": "Ionut Rogojan",
+        "description": "Out of a fairytaile",
         "meta": "https://raw.githubusercontent.com/ionutrogojan/castle/main/plugin.toml"
     }
 ]
