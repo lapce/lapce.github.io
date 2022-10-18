@@ -73,7 +73,7 @@
     },
     {
         "name": "lapce-dart",
-        "version": "0.0.1",
+        "version": "0.1.0",
         "display-name": "Dart",
         "author": "zarathir",
         "description": "Dart for Lapce: powered by dart language-server",
