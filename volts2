@@ -222,5 +222,12 @@
         "author": "VarLad",
         "description": "Julia plugin for Lapce",
         "meta": "https://raw.githubusercontent.com/VarLad/lapce-julia/master/volt.toml"
+    },
+    {
+        "name" = "castle",
+        "version": "0.1.0",
+        "display-name" = "Castle",
+        "author" = "Ionut Rogojan",
+        "meta": "https://raw.githubusercontent.com/ionutrogojan/castle/main/plugin.toml"
     }
 ]
