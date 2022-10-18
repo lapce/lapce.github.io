@@ -1,73 +1,84 @@
-// Burger menus
-document.addEventListener('DOMContentLoaded', function () {
-    // open
-    const burger = document.querySelectorAll('.navbar-burger');
-    const menu = document.querySelectorAll('.navbar-menu');
+const download = document.querySelector("#download");
 
-    if (burger.length && menu.length) {
-        for (var i = 0; i < burger.length; i++) {
-            burger[i].addEventListener('click', function () {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('hidden');
-                }
-            });
-        }
-    }
+// rather than looking for it all the time, you could just create an enum and change this once than updating every line
+const github = {
+repo: 'https://github.com/lapce/lapce',
+version: 'v0.2.1',
+windows: 'Lapce-windows.msi',
+linux: 'Lapce-linux.tar.gz',
+macos: 'Lapce-macos.dmg'
+}
 
+// there is no need to check for dom content loaded if you use defer inside html. Defer makes sure the script pauses until the dom loaded
 
-    // close
-    const close = document.querySelectorAll('.navbar-close');
-    const backdrop = document.querySelectorAll('.navbar-backdrop');
+// open
+const burger = document.querySelectorAll('.navbar-burger');
+const menu = document.querySelectorAll('.navbar-menu');
 
-    if (close.length) {
-        for (var i = 0; i < close.length; i++) {
-            close[i].addEventListener('click', function () {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('hidden');
-                }
-            });
-        }
-    }
+if (burger.length && menu.length) {
+	for (let i = 0; i < burger.length; i++) {
+		burger[i].addEventListener('click', () => {
+			for (let j = 0; j < menu.length; j++) {
+				menu[j].classList.toggle('hidden');
+			}
+		});
+	}
+}
 
-    if (backdrop.length) {
-        for (var i = 0; i < backdrop.length; i++) {
-            backdrop[i].addEventListener('click', function () {
-                for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('hidden');
-                }
-            });
-        }
-    }
+// close
+const close = document.querySelectorAll('.navbar-close');
+const backdrop = document.querySelectorAll('.navbar-backdrop');
 
-    var OSName = "mac";
-    const navApp = navigator.userAgent.toLowerCase();
-    switch (true) {
-        case (navApp.indexOf("win") != -1):
-            OSName = "win";
-            break;
-        case (navApp.indexOf("mac") != -1):
-            OSName = "mac";
-            break;
-        case (navApp.indexOf("linux") != -1):
-            OSName = "linux";
-            break;
-        case (navApp.indexOf("x11") != -1):
-            OSName = "linux";
-            break;
-    }
-    const download = document.getElementById("download");
-    switch (OSName) {
-        case "win":
-            download.innerText = "Download for Windows";
-            download.setAttribute("href", "https://github.com/lapce/lapce/releases/download/v0.2.1/Lapce-windows.msi")
-            break;
-        case "mac":
-            download.innerText = "Download for macOS";
-            download.setAttribute("href", "https://github.com/lapce/lapce/releases/download/v0.2.1/Lapce-macos.dmg")
-            break;
-        case "linux":
-            download.innerText = "Download for Linux";
-            download.setAttribute("href", "https://github.com/lapce/lapce/releases/download/v0.2.1/Lapce-linux.tar.gz")
-            break;
-    }
-});
+if (close.length) {
+	for (let i = 0; i < close.length; i++) {
+		close[i].addEventListener('click', () => {
+			for (let j = 0; j < menu.length; j++) {
+				menu[j].classList.toggle('hidden');
+			}
+		});
+	}
+}
+
+if (backdrop.length) {
+	for (let i = 0; i < backdrop.length; i++) {
+		backdrop[i].addEventListener('click', () => {
+			for (let j = 0; j < menu.length; j++) {
+				menu[j].classList.toggle('hidden');
+			}
+		});
+	}
+}
+
+// to avoid variables being reached outside of scope, ES6 guides recommend the use of let and const for variables. "var" is only available for backwards compatibility
+let OSName = "mac";
+const navApp = navigator.userAgent.toLowerCase();
+
+switch (true) {
+	case (navApp.indexOf("win") != -1):
+		OSName = "win";
+		break;
+	case (navApp.indexOf("mac") != -1):
+		OSName = "mac";
+		break;
+	case (navApp.indexOf("linux") != -1):
+		OSName = "linux";
+		break;
+	case (navApp.indexOf("x11") != -1):
+		OSName = "linux";
+		break;
+}
+
+switch (OSName) {
+	case "win":
+		download.innerText = "Download for Windows";
+		download.setAttribute("href", `${github.repo}/releases/download/${github.version}/${github.windows}`)
+		break;
+	case "mac":
+		download.innerText = "Download for macOS";
+		download.setAttribute("href", `${github.repo}/releases/download/${github.version}/${github.macos}`)
+		break;
+	case "linux":
+		download.innerText = "Download for Linux";
+		download.setAttribute("href", `${github.repo}/releases/download/${github.version}/${github.linux}`)
+		break;
+}
