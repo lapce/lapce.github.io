@@ -21,7 +21,7 @@
 		"display-name": "Python",
 		"author": "various",
 		"description": "Python for Lapce using python-lsp-server",
-		"meta": "https://raw.githubusercontent.com/superlou/lapce-python/volt/plugin.toml"
+		"meta": "https://raw.githubusercontent.com/superlou/lapce-python/volt/volt.toml"
 	},
 	{
 		"name": "aleph",
