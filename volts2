@@ -17,7 +17,7 @@
     },
     {
         "name": "lapce-typescript",
-        "version": "1.0.0",
+        "version": "1.0.2",
         "display-name": "Typescript / Javascript",
         "author": "panekj",
         "description": "TS/JS for Lapce: powered by typescript-language-server",
@@ -73,7 +73,7 @@
     },
     {
         "name": "lapce-dart",
-        "version": "0.0.1",
+        "version": "0.1.0",
         "display-name": "Dart",
         "author": "zarathir",
         "description": "Dart for Lapce: powered by dart language-server",
@@ -222,5 +222,13 @@
         "author": "VarLad",
         "description": "Julia plugin for Lapce",
         "meta": "https://raw.githubusercontent.com/VarLad/lapce-julia/master/volt.toml"
+    },
+    {
+        "name": "castle",
+        "version": "0.1.0",
+        "display-name": "Castle",
+        "author": "Ionut Rogojan",
+        "description": "Out of a fairytaile",
+        "meta": "https://raw.githubusercontent.com/ionutrogojan/castle/main/plugin.toml"
     }
 ]
