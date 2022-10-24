@@ -230,5 +230,13 @@
         "author": "Ionut Rogojan",
         "description": "Out of a fairytaile",
         "meta": "https://raw.githubusercontent.com/ionutrogojan/castle/main/plugin.toml"
+    },
+    {
+        "name": "Everblush",
+        "version": "0.1.0",
+        "display-name": "Everblush",
+        "author": "Everblush",
+        "description": "A Dark, Vibrant and Beatiful colorscheme",
+        "meta": "https://raw.githubusercontent.com/Everblush/lapce/main/volt.toml"
     }
 ]
