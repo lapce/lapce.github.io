@@ -89,7 +89,7 @@
     },
     {
         "name": "lapce-vue",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "display-name": "Vue",
         "author": "xiaoxin-sky",
         "description": "Vue for Lapce: powered by volar",
