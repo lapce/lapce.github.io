@@ -240,8 +240,8 @@
         "meta": "https://raw.githubusercontent.com/Everblush/lapce/main/volt.toml"
     },
     {
-        "name": "jeb-theme",
-        "version": "0.1.0",
+        "name": "jeb-dark",
+        "version": "0.1.1",
         "author": "JebGy",
         "display-name": "Jeb-Theme",
         "description": "The JebGy theme for Lapce",
