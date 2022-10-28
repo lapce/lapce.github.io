@@ -1,13 +1,5 @@
 [
     {
-        name = "jeb-theme"
-        version = "0.1.0"
-        author = "JebGy"
-        display-name = "Jeb-Theme"
-        description = "The JebGy theme for Lapce"
-        "meta": "https://raw.githubusercontent.com/JebGy/JebGy-Theme/main/volt.toml"
-    },
-    {
         "name": "lapce-rust",
         "version": "0.2.2",
         "display-name": "Rust",
@@ -246,5 +238,13 @@
         "author": "Everblush",
         "description": "A Dark, Vibrant and Beatiful colorscheme",
         "meta": "https://raw.githubusercontent.com/Everblush/lapce/main/volt.toml"
+    },
+    {
+        name = "jeb-theme"
+        version = "0.1.0"
+        author = "JebGy"
+        display-name = "Jeb-Theme"
+        description = "The JebGy theme for Lapce"
+        "meta": "https://raw.githubusercontent.com/JebGy/JebGy-Theme/main/volt.toml"
     }
 ]
