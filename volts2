@@ -98,7 +98,7 @@
     {
         "name": "lapce-rome",
         "version": "0.10.1",
-        "display-name": "Typescript / Javascript",
+        "display-name": "Rome",
         "author": "xiaoxin-sky",
         "description": "a Faster(⚡)  formatter, linter, bundler, and more for JavaScript, TypeScript, JSON, HTML, Markdown, and CSS.",
         "meta": "https://raw.githubusercontent.com/xiaoxin-sky/lapce-rome/master/volt.toml"
