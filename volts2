@@ -189,7 +189,7 @@
         "display-name": "Rosé Pine",
         "author": "ghishadow",
         "description": "Soho vibes for Lapce",
-        "meta": "https://raw.githubusercontent.com/ghishadow/rose-pine-lapce/master/volt.toml"
+        "meta": "https://raw.githubusercontent.com/ghishadow/rose-pine-lapce/nightly_volt/volt.toml"
     },
     {
         "name": "amolapce",
