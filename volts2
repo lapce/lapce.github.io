@@ -254,5 +254,13 @@
         "display-name": "Jeb Theme",
         "description": "The JebGy theme for Lapce",
         "meta": "https://raw.githubusercontent.com/JebGy/JebGy-Theme/main/volt.toml"
+    },
+    {
+        "name": "Dracula",
+        "version": "0.1.0",
+        "author": "d4rkr41n",
+        "display-name": "Dracula",
+        "description": "A dark theme for Lapce",
+        "meta": "https://raw.githubusercontent.com/d4rkr41n/lapce-dracula/main/plugin.toml"
     }
 ]
