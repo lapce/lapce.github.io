@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // rather than looking for it all the time, you could just create an enum and change this once than updating every line
     const github = {
         repo: 'https://github.com/lapce/lapce',
-        version: 'v0.2.3',
+        version: 'v0.2.4',
         windows: 'Lapce-windows.msi',
         linux: 'Lapce-linux.tar.gz',
         macos: 'Lapce-macos.dmg'
