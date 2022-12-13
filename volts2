@@ -201,11 +201,11 @@
     },
     {
         "name": "black-iris",
-        "version": "0.2.0",
+        "version": "1.0.0",
         "display-name": "Black Iris",
         "author": "p-yukusai",
-        "description": "An opinionated dark theme based on blai30's Lotus",
-        "meta": "https://raw.githubusercontent.com/p-yukusai/black-iris/main/plugin.toml"
+        "description": "A dark theme with pastel colors",
+        "meta": "https://raw.githubusercontent.com/p-yukusai/black-iris/main/volt.toml"
     },
     {
         "name": "material-dark-orange",
