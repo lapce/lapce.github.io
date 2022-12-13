@@ -110,5 +110,13 @@
 		"author": "ghishadow",
 		"description": "Soho vibes for Lapce",
 		"meta": "https://raw.githubusercontent.com/ghishadow/rose-pine-lapce/master/volt.toml"
+	},
+	{
+		"name": "black-iris",
+		"version": "1.0.0",
+		"display-name": "Black Iris",
+		"author": "p-yukusai",
+		"description": "A black theme with pastel colors",
+		"meta": "https://raw.githubusercontent.com/p-yukusai/black-iris/main/volt.toml"
 	}
 ]
