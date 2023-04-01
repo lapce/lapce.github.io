@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', async function () {
 
     // rather than looking for it all the time, you could just create an enum and change this once than updating every line
     const github = {
         repo: 'https://github.com/lapce/lapce',
-        version: 'v0.2.7',
+        version: (await (await fetch("https://api.github.com/repos/lapce/lapce/releases/latest")).json()).name,
         windows: 'Lapce-windows.msi',
         linux: 'Lapce-linux.tar.gz',
         macos: 'Lapce-macos.dmg'
