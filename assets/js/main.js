@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // rather than looking for it all the time, you could just create an enum and change this once than updating every line
     const github = {
         repo: 'https://github.com/lapce/lapce',
-        version: 'v0.2.7',
         windows: 'Lapce-windows.msi',
         linux: 'Lapce-linux.tar.gz',
         macos: 'Lapce-macos.dmg'
@@ -72,15 +71,15 @@ document.addEventListener('DOMContentLoaded', function () {
     switch (OSName) {
         case "win":
             download.innerText = "Download for Windows";
-            download.setAttribute("href", `${github.repo}/releases/download/${github.version}/${github.windows}`)
+            download.setAttribute("href", `${github.repo}/releases/latest/download/${github.windows}`)
             break;
         case "mac":
             download.innerText = "Download for macOS";
-            download.setAttribute("href", `${github.repo}/releases/download/${github.version}/${github.macos}`)
+            download.setAttribute("href", `${github.repo}/releases/latest/download/${github.macos}`)
             break;
         case "linux":
             download.innerText = "Download for Linux";
-            download.setAttribute("href", `${github.repo}/releases/download/${github.version}/${github.linux}`)
+            download.setAttribute("href", `${github.repo}/releases/latest/download/${github.linux}`)
             break;
     }
 });
