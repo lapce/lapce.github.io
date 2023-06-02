@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // there is no need to check for dom content loaded if you use defer inside html. Defer makes sure the script pauses until the dom loaded
-
     // open
     const burger = document.querySelectorAll('.navbar-burger');
     const menu = document.querySelectorAll('.navbar-menu');
