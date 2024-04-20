@@ -81,4 +81,10 @@ document.addEventListener('DOMContentLoaded', function () {
             download.setAttribute("href", `${github.repo}/releases/latest/download/${github.linux}`)
             break;
     }
+    
+    const stars = () =>
+	fetch(`https://api.github.com/repos/lapce/lapce`)
+	.then((res) => res.json())
+	.then((starred) => document.querySelector("#stars").innerText = starred.stargazers_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))
+    stars()
 });

@@ -8,10 +8,9 @@
   <meta name="description" content="Lightning-fast and Powerful Code Editor">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="assets/css/output.css">
+  <link rel="stylesheet" href="assets/css/output.css?id=123">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/lapce.png">
   <script src="assets/js/main.js?id=29372"></script>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
 <body class="antialiased bg-body text-body font-body">
@@ -33,17 +32,26 @@
               </ul>
             </a>
           </div>
-          <div class="flex items-center justify-end">
-            <ul class="flex space-x-8 mr-8">
+          <div class="flex flex-row items-center justify-end">
+            <ul class="flex flex-row items-center space-x-8 mr-8">
               <li>
                 <a class="text-coolGray-800 hover:text-coolGray-500 font-medium" href="https://docs.lapce.dev"
                   target="_blank">Docs</a>
               </li>
+              <li>
+                <div class="flex flex-row items-center rounded border bg-white text-xs font-semibold">
+                  <a class="flex flex-row items-center px-2 py-1 rounded border-r border-gray-300 bg-gray-100" href="https://github.com/lapce/lapce" rel="noopener" target="_blank" aria-label="Star lapce/lapce on GitHub">
+                    <svg viewBox="0 0 16 16" width="16" height="16" class="mr-1" aria-hidden="true">
+                      <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+                      </path>
+                    </svg>
+                    <span>Star</span>
+                  </a>
+                  <a id="stars" class="px-2 py-1" href="https://github.com/lapce/lapce" rel="noopener" target="_blank">
+                  </a>
+                </div>
+              </li>
             </ul>
-            <div class="translate-y-1">
-              <a class="github-button" href="https://github.com/lapce/lapce" data-size="large" data-show-count="true"
-                aria-label="Star lapce/lapce on GitHub">Star</a>
-            </div>
           </div>
         </div>
         <button class="navbar-burger self-center hidden">
@@ -159,7 +167,9 @@
             <h3 class="mb-4 text-xl md:text-2xl leading-tight font-bold">Remote Development</h3>
             <p class="text-coolGray-500 font-medium">You can connect to a remote machine seamlessly, with a
               "local" experience, benefiting from an identical environment with your production server, or utilizing
-              the full performance of the remote machine.</p>
+              the full performance of the remote machine.
+              We also have <a class="underline" href="http://lap.dev/" target="_blank">Lapdev</a> which can help manage your remote dev environments.
+            </p>
           </div>
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
