@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const github = {
         repo: 'https://github.com/lapce/lapce',
         windows: 'Lapce-windows.msi',
-        linux: 'Lapce-linux.tar.gz',
+        linux: 'lapce-linux-amd64.tar.gz',
         macos: 'Lapce-macos.dmg'
     }
 
